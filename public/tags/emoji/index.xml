@@ -12,10 +12,10 @@
     <atom:link href="//localhost:1313/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>//localhost:1313/post/emoji-support/</link>
+      <link>//localhost:1313/post/evil_zip/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <guid>//localhost:1313/post/evil_zip/</guid>
+      <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a very useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very subtle bugs that are hard to track down (and has hurt me in the past).</description>
     </item>
   </channel>
 </rss>

@@ -1,14 +1,13 @@
 +++
-title = 'List mutation creation gotchas - Range vs *'
-date = 2024-03-19T00:29:50+08:00
-draft = False
+title = 'Accidental list mutation with asterisk'
+date = "2024-03-15"
 tags = [
     "python",
     "rants",
 ]
 +++
 
-Let's say you want to create a list of 10 empty lists. 
+Let's say you want to create a list, which has another 10 empty lists. 
 Meaning that you want to create a list that looks like this:
 ```python
 [[], [], [], [], [], [], [], [], [], []]

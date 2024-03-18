@@ -1,15 +1,16 @@
 +++
-title = 'Native zip is evil'
-date = 2024-03-19T00:29:50+08:00
-draft = False
+author = "James Chua"
+title = "Native zip is evil"
+date = "2024-03-16"
 tags = [
     "python",
     "rants",
 ]
 +++
 
-The `zip` function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a very useful function, but it has a very dangerous pitfall that can lead to very subtle bugs.
-It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very subtle bugs that are hard to track down (and has hurt me in the past).
+
+The `zip` function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs.
+It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).
 
 For example
     

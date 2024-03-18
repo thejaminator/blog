@@ -19,7 +19,7 @@ theme = 'nightfall'
     email = "email@example.com"  # RSS feed email address
 
 
-readingTime = true  # Show reading time on post page
+readingTime = false  # Show reading time on post page
 published = true  # Show published data on post page
 
 [[params.social]]

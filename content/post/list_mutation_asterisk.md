@@ -3,8 +3,9 @@ title = 'Accidental list mutation with asterisk'
 date = "2024-03-15"
 tags = [
     "python",
-    "rants",
+    "gotchas",
 ]
+draft = false
 +++
 
 Let's say you want to create a list, which has another 10 empty lists. 

@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>
-404 | James Chua
+Gotchas | James Chua
 </title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -13,7 +13,9 @@
 <meta name="generator" content="Hugo 0.124.0">
 
 
-<link rel="canonical" href="//localhost:1313/404.html" >
+<link rel="canonical" href="//localhost:1313/tags/gotchas/" >
+  <link href="//localhost:1313/tags/gotchas/index.xml" rel="alternate" type="application/rss+xml" title="" >
+  <link href="//localhost:1313/tags/gotchas/index.xml" rel="feed" type="application/rss+xml" title="" >
 
 
 
@@ -59,8 +61,51 @@
         <div class="content">
             <main class="main">
                 
-<h1>NOT FOUND</h1>
-<p>You just hit a route that doesn&#39;t exist...</p>
+
+<div>
+    <div class="listHeader">
+        <h1>Gotchas</h1>
+    </div>
+
+    
+
+    <div>
+        
+
+        <a class="postListLink" href="//localhost:1313/post/list_mutation_asterisk/">
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">Accidental list mutation with asterisk</span>
+                    
+                    <time class="postDate" datetime="2024-03-15">March 15, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p>Let&rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:
+[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:
+lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</p>
+                </div>
+                
+                
+                <div class="postTags">
+                    
+                        
+                        
+                        <a href="/tags/python" class="tag">#python</a>
+                    
+                        
+                        
+                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                    
+                </div>
+                
+            </div>
+        </a>
+
+
+        
+    </div>
+</div>
+
 
             </main>
         </div>

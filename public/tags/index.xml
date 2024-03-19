@@ -2,33 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>//localhost:58546/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
     <lastBuildDate>Tue, 19 Mar 2024 15:44:15 +0800</lastBuildDate>
-    <atom:link href="//localhost:58546/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Index</title>
-      <link>//localhost:58546/tags/index/</link>
+      <link>//localhost:1313/tags/index/</link>
       <pubDate>Tue, 19 Mar 2024 15:44:15 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:58546/tags/index/</guid>
+      <guid>//localhost:1313/tags/index/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>//localhost:58546/tags/python/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:58546/tags/python/</guid>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Tue, 19 Mar 2024 15:44:15 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typing</title>
+      <link>//localhost:1313/tags/typing/</link>
+      <pubDate>Tue, 19 Mar 2024 15:44:15 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/tags/typing/</guid>
       <description></description>
     </item>
     <item>
       <title>Rants</title>
-      <link>//localhost:58546/tags/rants/</link>
+      <link>//localhost:1313/tags/rants/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:58546/tags/rants/</guid>
+      <guid>//localhost:1313/tags/rants/</guid>
       <description></description>
     </item>
   </channel>

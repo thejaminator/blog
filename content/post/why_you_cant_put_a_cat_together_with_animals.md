@@ -2,6 +2,10 @@
 title = 'When my Cats are not Animals - an explanation of invariance and covariance'
 date = 2024-03-19T15:44:15+08:00
 draft = false
+tags = [
+    "python",
+    "typing",
+]
 +++
 
 Let's say you have a parent class `Animal` and a child class `Cat` that inherits from `Animal`. 

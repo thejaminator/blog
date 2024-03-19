@@ -2,36 +2,51 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-    <title>
-        {{ i18n "home" }} | {{ .Site.Params.author.name }}
-    </title>
-
+    <title>{{ .Site.Title }} | {{ .Site.Params.author.name }}</title>
     {{ partial "head.html" . }}
-
 </head>
 
 <body>
 
-    <div class="flexWrapper">
-        {{ partial "header.html" . }}
+<div class="flexWrapper">
+    {{ partial "header.html" . }}
 
-        <div class="content vertical">
-            <main class="main">
-                <div class="indexWrapper">
-                    <div>
-                        <h1 class="indexHeader">{{ .Site.Params.author.name }}</h1>
-                    </div>
-                    {{ if isset .Site.Params "social" }}
-                        {{ partial "social.html" . }}
-                    {{ end }}
+    <div class="content vertical">
+        <main class="main">
+            <div class="indexWrapper">
+                <div>
+                    <h1 class="indexHeader">{{ .Site.Params.author.name }}</h1>
                 </div>
-            </main>
-        </div>
-
-
-        {{ partial "footer.html" . }}
+                <!-- Display list of posts -->
+                {{ range .Paginator.Pages }}
+                <a class="postListLink" href="{{ .Permalink }}">
+                    <div class="postListItem" role="listitem">
+                        <div class="postHeader">
+                            <span class="postTitle">{{ .Title }}</span>
+                            {{ $formattedDate := .Date.Format "2006-01-02" }}
+                            <time class="postDate" datetime="{{ $formattedDate }}">{{ .Date | time.Format ":date_long" }}</time>
+                        </div>
+                        <div class="postExcerpt">
+                            <p>{{ .Summary }}</p>
+                        </div>
+                        {{ if .Params.tags }}
+                        <div class="postTags">
+                            {{ range .Params.tags }}
+                                {{ $tagName := . }}
+                                {{ $tagURL := printf "/tags/%s" $tagName | relURL }}
+                                <a href="{{ $tagURL }}" class="tag">#{{ $tagName }}</a>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+        </main>
     </div>
 
-</body>
+    {{ partial "footer.html" . }}
+</div>
 
+</body>
 </html>

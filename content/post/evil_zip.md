@@ -4,7 +4,7 @@ title = "Native zip is evil"
 date = "2024-03-16"
 tags = [
     "python",
-    "rants",
+    "gotchas",
 ]
 +++
 

@@ -1,9 +1,9 @@
 +++
 author = "James Chua"
-title = "I like lambda more than partial, but sometimes I pay the price"
+title = "I love lambda functions more than using partial, but sometimes love hurts"
 date = "2024-03-18"
 tags = [
     "python",
-    "rants",
+    "gotchas",
 ]
 +++

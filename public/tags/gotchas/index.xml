@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gotchas on </title>
+    <link>//localhost:1313/tags/gotchas/</link>
+    <description>Recent content in Gotchas on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>email@example.com (James Chua)</managingEditor>
+    <webMaster>email@example.com (James Chua)</webMaster>
+    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/gotchas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accidental list mutation with asterisk</title>
+      <link>//localhost:1313/post/list_mutation_asterisk/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/list_mutation_asterisk/</guid>
+      <description>Let&amp;rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:&#xA;[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:&#xA;lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</description>
+    </item>
+  </channel>
+</rss>

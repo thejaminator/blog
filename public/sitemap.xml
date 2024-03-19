@@ -2,53 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:58546/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/tags/index/</loc>
+    <loc>//localhost:1313/tags/index/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/post/</loc>
+    <loc>//localhost:1313/post/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/tags/</loc>
+    <loc>//localhost:1313/tags/python/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/post/why_you_cant_put_a_cat_together_with_animals/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/post/lambdas_vs_partial/</loc>
+    <loc>//localhost:1313/tags/typing/</loc>
+    <lastmod>2024-03-19T15:44:15+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/why_you_cant_put_a_cat_together_with_animals/</loc>
+    <lastmod>2024-03-19T15:44:15+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/lambdas_vs_partial/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/tags/python/</loc>
+    <loc>//localhost:1313/tags/rants/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/tags/rants/</loc>
-    <lastmod>2024-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:58546/post/evil_zip/</loc>
+    <loc>//localhost:1313/post/evil_zip/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/post/list_mutation_asterisk/</loc>
+    <loc>//localhost:1313/post/list_mutation_asterisk/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:58546/future/copying_the_whole_object_pros_and_cons_and_sentinels/</loc>
+    <loc>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</loc>
   </url><url>
-    <loc>//localhost:58546/future/i_like_chaining_methods_so_i_made_a_list_library/</loc>
+    <loc>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</loc>
   </url><url>
-    <loc>//localhost:58546/future/mypy_vs_pyright/</loc>
+    <loc>//localhost:1313/future/mypy_vs_pyright/</loc>
   </url><url>
-    <loc>//localhost:58546/future/python_list_comprehensions_are_weird/</loc>
+    <loc>//localhost:1313/future/python_list_comprehensions_are_weird/</loc>
   </url><url>
-    <loc>//localhost:58546/future/the_self_typing_trick_slist/</loc>
+    <loc>//localhost:1313/future/the_self_typing_trick_slist/</loc>
   </url><url>
-    <loc>//localhost:58546/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:58546/categories/</loc>
-  </url><url>
-    <loc>//localhost:58546/future/</loc>
+    <loc>//localhost:1313/future/</loc>
   </url>
 </urlset>

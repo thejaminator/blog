@@ -19,7 +19,6 @@
         {{ range .Pages }}
 
         <a class="postListLink" href="{{ .Permalink }}">
-            <!-- [html-validate-disable-next prefer-native-element] -->
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
                     <span class="postTitle">{{ .Title }}</span>
@@ -29,6 +28,16 @@
                 <div class="postExcerpt">
                     <p>{{ .Summary }}</p>
                 </div>
+                <!-- Link to pages with the same tag -->
+                {{ if .Params.tags }}
+                <div class="postTags">
+                    {{ range .Params.tags }}
+                        {{ $tagName := . }}
+                        {{ $tagURL := printf "/tags/%s" $tagName | relURL }}
+                        <a href="{{ $tagURL }}" class="tag">#{{ $tagName }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
             </div>
         </a>
 

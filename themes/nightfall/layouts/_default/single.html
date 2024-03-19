@@ -21,13 +21,19 @@
                 {{ partial "taxonomy/categories.html" . }}
             {{ end }}
             {{ if .Site.Params.published | default true }}
+            <!-- Check if the published date exists -->
+                {{ if .Date | default false}}
                 <dt>{{ i18n "published" }}</dt>
                 {{ $formattedDate := .Date.Format "2006-01-02" }}
                 <dd><time datetime="{{ $formattedDate }}">{{ .Date | time.Format ":date_long" }}</time></dd>
+                {{ end }}
             {{ end }}
             {{ if .Site.Params.readingTime | default true }}
-                <dt>{{ i18n "reading_time" }}</dt>
-                <dd>{{ i18n "reading_time_desc" .ReadingTime }}</dd>
+                <!-- If the page isn't /about -->
+                {{ if ne .RelPermalink "/about/" }}
+                    <dt>{{ i18n "reading_time" }}</dt>
+                    <dd>{{ i18n "reading_time_desc" .ReadingTime }}</dd>
+                {{ end }}
             {{ end }}
         </dl>
     </section>

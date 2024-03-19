@@ -1,7 +1,7 @@
 +++
 aliases = ["posts", "articles", "blog", "showcase", "docs"]
-title = "Posts"
-description = "My thoughts on python and AI alignment"
+title = "James' Blog"
+description = "My thoughts on python, typing and maybe AI alignment"
 author = "James Chua"
 tags = ["index"]
 +++

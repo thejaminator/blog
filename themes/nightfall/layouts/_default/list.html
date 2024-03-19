@@ -17,7 +17,13 @@
             <main class="main">
                 <div>
                     <div class="listHeader">
-                        <h1>James' Blog</h1>
+                        <h1>
+                            <!-- Use the title and description -->
+                            {{ .Title }}
+                        </h1>
+                        {{ if .Description }}
+                        <p>{{ .Description }}</p>
+                        {{ end }}
                     </div>
 
                     {{ with .Content }}

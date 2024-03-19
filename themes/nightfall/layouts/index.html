@@ -1,66 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-
-<head>
-    <title>
-        {{ i18n "home" }} | {{ .Site.Params.author.name }}
-    </title>
-    {{ partial "head.html" . }}
-</head>
-
-<body>
-
-    <div class="flexWrapper">
-        {{ partial "header.html" . }}
-
-        <div class="content vertical">
-            <main class="main">
-                <div>
-                    <div class="listHeader">
-                        <h1>James' Blog</h1>
-                    </div>
-
-                    {{ with .Content }}
-                    <div class="listContent">
-                        {{- . -}}
-                    </div>
-                    {{ end }}
-
-                    <div>
-                        {{ range .Paginator.Pages }}
-
-                        <a class="postListLink" href="{{ .Permalink }}">
-                            <div class="postListItem" role="listitem">
-                                <div class="postHeader">
-                                    <span class="postTitle">{{ .Title }}</span>
-                                    {{ $formattedDate := .Date.Format "2006-01-02" }}
-                                    <time class="postDate" datetime="{{ $formattedDate }}">{{ .Date | time.Format ":date_long" }}</time>
-                                </div>
-                                <div class="postExcerpt">
-                                    <p>{{ .Summary }}</p>
-                                </div>
-                                <!-- Link to pages with the same tag -->
-                                {{ if .Params.tags }}
-                                <div class="postTags">
-                                    {{ range .Params.tags }}
-                                        {{ $tagName := . }}
-                                        {{ $tagURL := printf "/tags/%s" $tagName | relURL }}
-                                        <a href="{{ $tagURL }}" class="tag">#{{ $tagName }}</a>
-                                    {{ end }}
-                                </div>
-                                {{ end }}
-                            </div>
-                        </a>
-
-                        {{ end }}
-                    </div>
-                </div>
-            </main>
-        </div>
-
-        {{ partial "footer.html" . }}
-    </div>
-
-</body>
-
+<head> 
+<meta http-equiv="refresh" content="0; url=/post" />
+</head> 
 </html>

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Futures on </title>
-    <link>//localhost:1313/future/</link>
+    <link>//localhost:58546/future/</link>
     <description>Recent content in Futures on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <atom:link href="//localhost:1313/future/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:58546/future/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</link>
+      <link>//localhost:58546/future/copying_the_whole_object_pros_and_cons_and_sentinels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</guid>
+      <guid>//localhost:58546/future/copying_the_whole_object_pros_and_cons_and_sentinels/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</link>
+      <link>//localhost:58546/future/i_like_chaining_methods_so_i_made_a_list_library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</guid>
+      <guid>//localhost:58546/future/i_like_chaining_methods_so_i_made_a_list_library/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/lambdas_vs_partial/</link>
+      <link>//localhost:58546/future/mypy_vs_pyright/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/lambdas_vs_partial/</guid>
+      <guid>//localhost:58546/future/mypy_vs_pyright/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/mypy_vs_pyright/</link>
+      <link>//localhost:58546/future/python_list_comprehensions_are_weird/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/mypy_vs_pyright/</guid>
+      <guid>//localhost:58546/future/python_list_comprehensions_are_weird/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/python_list_comprehensions_are_weird/</link>
+      <link>//localhost:58546/future/the_self_typing_trick_slist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/python_list_comprehensions_are_weird/</guid>
-      <description></description>
+      <guid>//localhost:58546/future/the_self_typing_trick_slist/</guid>
+      <description>// Talk about self: Slist[int] hacks</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</link>
+      <link>//localhost:58546/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</guid>
+      <guid>//localhost:58546/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</guid>
       <description></description>
     </item>
   </channel>

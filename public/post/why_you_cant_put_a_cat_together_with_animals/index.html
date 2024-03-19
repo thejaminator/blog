@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58546&amp;path=livereload" data-no-instant defer></script>
+    <title>
+When my Cats are not Animals - an explanation of invariance and covariance | James Chua
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.124.0">
+
+
+<link rel="canonical" href="//localhost:58546/post/why_you_cant_put_a_cat_together_with_animals/" >
+
+
+
+
+<link href="/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:58546/">
+                <span>@ ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:58546/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:58546/blog" title="" >
+                        ~/blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>When my Cats are not Animals - an explanation of invariance and covariance</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-03-19">March 19, 2024</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>4 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>Let&rsquo;s say you have a parent class <code>Animal</code> and a child class <code>Cat</code> that inherits from <code>Animal</code>.
+You might think that you can add a <code>Cat</code> to a list of <code>Animal</code>s. But then your pyright / vscode / mypy linter will complain that you can&rsquo;t do that. Why is that?</p>
+<p>Let&rsquo;s start with a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_sound</span>(self) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;animal!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span>(Animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cat</span>(Animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">meow</span>(self) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;meow!!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_animal_sounds</span>(animals: list[Animal]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> animal <span style="color:#f92672">in</span> animals:
+</span></span><span style="display:flex;"><span>        animal<span style="color:#f92672">.</span>make_sound()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_cat_sounds</span>(cats: list[Cat]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> cat <span style="color:#f92672">in</span> cats:
+</span></span><span style="display:flex;"><span>        cat<span style="color:#f92672">.</span>meow()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    cats: list[Cat] <span style="color:#f92672">=</span> [Cat()]
+</span></span><span style="display:flex;"><span>    make_cat_sounds(cats<span style="color:#f92672">=</span>cats) <span style="color:#75715e"># OK</span>
+</span></span><span style="display:flex;"><span>    make_animal_sounds(animals<span style="color:#f92672">=</span>cats) <span style="color:#75715e"># &#34;Typeerror: list[Cat] is compatible with list[Animal]&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span></code></pre></div><p>Why is <code>list[Cat]</code> incompatible with <code>list[Animal]</code>?
+The reason is that <code>list[Cat]</code> is not a subclass of <code>list[Animal]</code>.
+This is weird to us - because <code>Cat</code> is a subclass of <code>Animal</code>, so why isn&rsquo;t <code>list[Cat]</code> a subclass of <code>list[Animal]</code>?</p>
+<p>The short answer is that the <code>list</code> is mutable and so you&rsquo;ll get into trouble if you allow <code>list[Cat]</code> to be a subclass of <code>list[Animal]</code>.</p>
+<p>Let&rsquo;s see an example where <code>list[Cat]</code> is a subclass of <code>list[Animal]</code>, and things exploding.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    cats: list[Cat] <span style="color:#f92672">=</span> [Cat()]
+</span></span><span style="display:flex;"><span>    animals: list[Animal] <span style="color:#f92672">=</span> cats <span style="color:#75715e"># Normally, this would be flagged out as an error, but let&#39;s pretend that this is allowed</span>
+</span></span><span style="display:flex;"><span>    animals<span style="color:#f92672">.</span>append(Dog()) <span style="color:#75715e"># This is allowed a Dog can be added to a list of Animals</span>
+</span></span><span style="display:flex;"><span>    make_cat_sounds(cats<span style="color:#f92672">=</span>cats) <span style="color:#75715e"># Explodes at runtime because you&#39;ll call .meow() on a Dog</span>
+</span></span><span style="display:flex;"><span>    make_animal_sounds(animals<span style="color:#f92672">=</span>animals) <span style="color:#75715e"># OK</span>
+</span></span></code></pre></div><p>This is why <code>list[Cat]</code> is not a subclass of <code>list[Animal]</code>. If it were, you would be able to add a <code>Dog</code> to a list of <code>Cat</code>s, and that would be a disaster by causing make_cat_sounds(cats=cats) to explode at runtime.
+In confusing-type-theory-speak, we say that <code>list</code> is <em>invariant</em> in its type parameter. This means that <code>list[Cat]</code> is not a subclass of <code>list[Animal]</code>.</p>
+<h2 id="how-do-i-fix-it---promise-to-never-mutate-the-list">How do I fix it - Promise to never mutate the list</h2>
+<p>The real problem is mutability. Our <code>.append(Dog())</code> caused the explosion.
+Now what happens if we promise to never mutate that list[Cat]?
+We can promise by type hinting the cats in <code>make_cat_sounds</code> as a Sequence[Cat].</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Sequence
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_sound</span>(self) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;animal!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span>(Animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cat</span>(Animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">meow</span>(self) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;meow!!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_animal_sounds</span>(animals: Sequence[Animal]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> animal <span style="color:#f92672">in</span> animals:
+</span></span><span style="display:flex;"><span>        animal<span style="color:#f92672">.</span>make_sound()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_cat_sounds</span>(cats: Sequence[Cat]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> cat <span style="color:#f92672">in</span> cats:
+</span></span><span style="display:flex;"><span>        cat<span style="color:#f92672">.</span>meow()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    cats: Sequence[Cat] <span style="color:#f92672">=</span> [Cat()]
+</span></span><span style="display:flex;"><span>    animals: Sequence[Animal] <span style="color:#f92672">=</span> cats <span style="color:#75715e"># Allowed, because a Sequence[Cat] is a subclass of Sequence[Animal].</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># animals.append(Dog()) # You can&#39;t do this - this will be flagged as an error. So we are forced to make a new list instead</span>
+</span></span><span style="display:flex;"><span>    make_cat_sounds(cats<span style="color:#f92672">=</span>animals) <span style="color:#75715e"># OK because you never mutated the list to add a dog</span>
+</span></span><span style="display:flex;"><span>    new_animals <span style="color:#f92672">=</span> list(cats) <span style="color:#f92672">+</span> [Dog()] <span style="color:#75715e"># OK</span>
+</span></span><span style="display:flex;"><span>    make_animal_sounds(animals<span style="color:#f92672">=</span>new_animals) <span style="color:#75715e"># OK</span>
+</span></span></code></pre></div><h2 id="what-just-happened">What just happened?</h2>
+<p>By changing the type hint from <code>list</code> to <code>Sequence</code>, we are saying that we promise to never mutate the list. This is a good thing because it makes our code safer. We can&rsquo;t accidentally add a <code>Dog</code> to a list of <code>Cat</code>s.
+By promising to never mutate the list, we are allowed to treat a <code>Sequence[Cat]</code> as a <code>Sequence[Animal]</code>. This is called <em>covariance</em> in confusing-type-theory-speak.</p>
+<h2 id="in-the-wild">In the wild</h2>
+<p>Where else do you see this?</p>
+<p>Normally in python we say that an int can be treated as a float.</p>
+<p>However when you try to pass a list[int] to a function that expects a list[float], this is not allowed because <code>list[int]</code> is not a subclass of <code>list[float]</code>. You can fix this by promising to never mutate the list, and changing the type hint to <code>Sequence[float]</code>.</p>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Sequence
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_float</span>(f: float) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    print(f)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_floats</span>(floats: list[float]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> floats:
+</span></span><span style="display:flex;"><span>        print_float(f)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_floats_seq</span>(floats: Sequence[float]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> floats:
+</span></span><span style="display:flex;"><span>        print_float(f)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    single_int: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    print_float(f<span style="color:#f92672">=</span>single_int) <span style="color:#75715e"># OK</span>
+</span></span><span style="display:flex;"><span>    ints: list[int] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>    print_floats(floats<span style="color:#f92672">=</span>ints) <span style="color:#75715e"># &#34;Typeerror: list[int] is not compatible with list[float]&#34;</span>
+</span></span><span style="display:flex;"><span>    ints_seq: Sequence[int] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>] <span style="color:#75715e"># OK</span>
+</span></span><span style="display:flex;"><span>    print_floats_seq(ints_seq)
+</span></span></code></pre></div><h2 id="what-does-this-mean-for-library-authors">What does this mean for library authors?</h2>
+<p>In general, you should use <code>Sequence</code> instead of <code>list</code> in your type hints. Two reasons</p>
+<ul>
+<li>The Sequence being covariant accepts a wider range of inputs. The Sequence[float] accepts a list[int] and a list[float]. But a list[float] only accepts a list[float].</li>
+<li>A Sequence is more general than a list. A Sequence can be a list, a tuple, or any other sequence type (like a tuple of floats..) This makes your library more flexible. In principle we want the most general type hint that we can get away with.</li>
+</ul>
+<p>See <a href="https://github.com/microsoft/pyright/blob/main/docs/typed-libraries.md#best-practices-for-inlined-types">the excellent pyright best practices guide</a>.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2024 James Chua, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

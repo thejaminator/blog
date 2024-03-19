@@ -2,75 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>//localhost:1313/</link>
+    <link>//localhost:58546/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Mon, 18 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Mar 2024 15:44:15 +0800</lastBuildDate>
+    <atom:link href="//localhost:58546/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When my Cats are not Animals - an explanation of invariance and covariance</title>
+      <link>//localhost:58546/post/why_you_cant_put_a_cat_together_with_animals/</link>
+      <pubDate>Tue, 19 Mar 2024 15:44:15 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:58546/post/why_you_cant_put_a_cat_together_with_animals/</guid>
+      <description>Let&amp;rsquo;s say you have a parent class Animal and a child class Cat that inherits from Animal. You might think that you can add a Cat to a list of Animals. But then your pyright / vscode / mypy linter will complain that you can&amp;rsquo;t do that. Why is that?&#xA;Let&amp;rsquo;s start with a simple example:&#xA;class Animal: def make_sound(self) -&amp;gt; None: print(f&amp;#34;animal!&amp;#34;) class Dog(Animal): ... class Cat(Animal): ... def meow(self) -&amp;gt; None: print(&amp;#34;meow!</description>
+    </item>
+    <item>
+      <title>I like lambda more than partial, but sometimes I pay the price</title>
+      <link>//localhost:58546/post/lambdas_vs_partial/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:58546/post/lambdas_vs_partial/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Native zip is evil</title>
-      <link>//localhost:1313/post/evil_zip/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/post/evil_zip/</guid>
+      <link>//localhost:58546/post/evil_zip/</link>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:58546/post/evil_zip/</guid>
       <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
     </item>
     <item>
       <title>Accidental list mutation with asterisk</title>
-      <link>//localhost:1313/post/list_mutation_asterisk/</link>
+      <link>//localhost:58546/post/list_mutation_asterisk/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/post/list_mutation_asterisk/</guid>
+      <guid>//localhost:58546/post/list_mutation_asterisk/</guid>
       <description>Let&amp;rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:&#xA;[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:&#xA;lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</description>
     </item>
     <item>
       <title>About</title>
-      <link>//localhost:1313/about/</link>
+      <link>//localhost:58546/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
+      <guid>//localhost:58546/about/</guid>
+      <description>WIP&#xA;Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</link>
+      <link>//localhost:58546/future/copying_the_whole_object_pros_and_cons_and_sentinels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</guid>
+      <guid>//localhost:58546/future/copying_the_whole_object_pros_and_cons_and_sentinels/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</link>
+      <link>//localhost:58546/future/i_like_chaining_methods_so_i_made_a_list_library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</guid>
+      <guid>//localhost:58546/future/i_like_chaining_methods_so_i_made_a_list_library/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/lambdas_vs_partial/</link>
+      <link>//localhost:58546/future/mypy_vs_pyright/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/lambdas_vs_partial/</guid>
+      <guid>//localhost:58546/future/mypy_vs_pyright/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/mypy_vs_pyright/</link>
+      <link>//localhost:58546/future/python_list_comprehensions_are_weird/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/mypy_vs_pyright/</guid>
+      <guid>//localhost:58546/future/python_list_comprehensions_are_weird/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/python_list_comprehensions_are_weird/</link>
+      <link>//localhost:58546/future/the_self_typing_trick_slist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/python_list_comprehensions_are_weird/</guid>
-      <description></description>
+      <guid>//localhost:58546/future/the_self_typing_trick_slist/</guid>
+      <description>// Talk about self: Slist[int] hacks</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</link>
+      <link>//localhost:58546/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</guid>
+      <guid>//localhost:58546/future/why_you_cant_put_a_cat_in_a_list_of_animals_invariance_covariance/</guid>
       <description></description>
     </item>
   </channel>

@@ -3,9 +3,8 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>
-Gotchas | James Chua
-</title>
-
+        Home | James Chua
+    </title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
@@ -21,7 +20,6 @@ Gotchas | James Chua
 
 
 <link href="/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
-
 
 
 
@@ -58,58 +56,110 @@ Gotchas | James Chua
 </header>
 
 
-        <div class="content">
+        <div class="content vertical">
             <main class="main">
-                
+                <div>
+                    <div class="listHeader">
+                        <h1>Gotchas</h1>
+                    </div>
 
-<div>
-    <div class="listHeader">
-        <h1>Gotchas</h1>
-    </div>
-
-    
-
-    <div>
-        
-
-        <a class="postListLink" href="//localhost:1313/post/list_mutation_asterisk/">
-            <div class="postListItem" role="listitem">
-                <div class="postHeader">
-                    <span class="postTitle">Accidental list mutation with asterisk</span>
                     
-                    <time class="postDate" datetime="2024-03-15">March 15, 2024</time>
-                </div>
-                <div class="postExcerpt">
-                    <p>Let&rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:
+
+                    <div>
+                        
+
+                        <a class="postListLink" href="//localhost:1313/post/lambdas_vs_partial/">
+                            <div class="postListItem" role="listitem">
+                                <div class="postHeader">
+                                    <span class="postTitle">I love lambda functions more than using partial, but sometimes love hurts</span>
+                                    
+                                    <time class="postDate" datetime="2024-03-18">March 18, 2024</time>
+                                </div>
+                                <div class="postExcerpt">
+                                    <p></p>
+                                </div>
+                                
+                                
+                                <div class="postTags">
+                                    
+                                        
+                                        
+                                        <a href="/tags/python" class="tag">#python</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </a>
+
+                        
+
+                        <a class="postListLink" href="//localhost:1313/post/evil_zip/">
+                            <div class="postListItem" role="listitem">
+                                <div class="postHeader">
+                                    <span class="postTitle">Native zip is evil</span>
+                                    
+                                    <time class="postDate" datetime="2024-03-16">March 16, 2024</time>
+                                </div>
+                                <div class="postExcerpt">
+                                    <p>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</p>
+                                </div>
+                                
+                                
+                                <div class="postTags">
+                                    
+                                        
+                                        
+                                        <a href="/tags/python" class="tag">#python</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </a>
+
+                        
+
+                        <a class="postListLink" href="//localhost:1313/post/list_mutation_asterisk/">
+                            <div class="postListItem" role="listitem">
+                                <div class="postHeader">
+                                    <span class="postTitle">Accidental list mutation with asterisk</span>
+                                    
+                                    <time class="postDate" datetime="2024-03-15">March 15, 2024</time>
+                                </div>
+                                <div class="postExcerpt">
+                                    <p>Let&rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:
 [[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:
 lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</p>
+                                </div>
+                                
+                                
+                                <div class="postTags">
+                                    
+                                        
+                                        
+                                        <a href="/tags/python" class="tag">#python</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </a>
+
+                        
+                    </div>
                 </div>
-                
-                
-                <div class="postTags">
-                    
-                        
-                        
-                        <a href="/tags/python" class="tag">#python</a>
-                    
-                        
-                        
-                        <a href="/tags/gotchas" class="tag">#gotchas</a>
-                    
-                </div>
-                
-            </div>
-        </a>
-
-
-        
-    </div>
-</div>
-
-
             </main>
         </div>
-
 
         <footer class="footer">
     

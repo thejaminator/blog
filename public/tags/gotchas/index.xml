@@ -8,8 +8,22 @@
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/gotchas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I love lambda functions more than using partial, but sometimes love hurts</title>
+      <link>//localhost:1313/post/lambdas_vs_partial/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/lambdas_vs_partial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Native zip is evil</title>
+      <link>//localhost:1313/post/evil_zip/</link>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/evil_zip/</guid>
+      <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
+    </item>
     <item>
       <title>Accidental list mutation with asterisk</title>
       <link>//localhost:1313/post/list_mutation_asterisk/</link>

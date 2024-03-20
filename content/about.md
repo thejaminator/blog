@@ -13,4 +13,4 @@ I also enjoy making typesafe python packages such as [Slist](https://github.com/
 
 [My Github](https://github.com/thejaminator)
 
-You can also reach me at chuajamessh < dot > gmail
+You can reach me at chuajamessh < dot > gmail

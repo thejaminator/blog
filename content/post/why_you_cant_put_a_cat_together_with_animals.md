@@ -8,6 +8,8 @@ tags = [
 ]
 +++
 
+![a cat being excluded from a group of animals](/excluded_cat.webp "300px")
+
 Let's say you have a parent class `Animal` and a child class `Cat` that inherits from `Animal`. 
 You might think that you can add a `Cat` to a list of `Animal`s. But then your pyright / vscode / mypy linter will complain that you can't do that. Why is that?
 

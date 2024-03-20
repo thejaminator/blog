@@ -93,7 +93,10 @@ When my Cats are not Animals - an explanation of invariance and covariance | Jam
     </section>
     
     <div>
-        <p>Let&rsquo;s say you have a parent class <code>Animal</code> and a child class <code>Cat</code> that inherits from <code>Animal</code>.
+        <p>
+
+<img src="/excluded_cat.webp" alt="a cat being excluded from a group of animals"   style="width: 100%; max-width: 300px;"/></p>
+<p>Let&rsquo;s say you have a parent class <code>Animal</code> and a child class <code>Cat</code> that inherits from <code>Animal</code>.
 You might think that you can add a <code>Cat</code> to a list of <code>Animal</code>s. But then your pyright / vscode / mypy linter will complain that you can&rsquo;t do that. Why is that?</p>
 <p>Let&rsquo;s start with a simple example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span>:

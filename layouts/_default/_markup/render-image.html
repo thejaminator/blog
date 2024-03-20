@@ -1,0 +1,4 @@
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+<!-- https://github.com/werat/werat.github.io/blob/faa5bab6f6498b25ce0df1c261e16af7fa881f9d/layouts/_default/_markup/render-image.html -->
+{{/* I use .Title to specify the max-width property */}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with $image }} width="{{ $image.Width }}" height="{{ $image.Height }}" {{ end }} {{ with .Title}} style="width: 100%; max-width: {{ . }};"{{ end }}/>

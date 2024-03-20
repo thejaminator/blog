@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reflection on </title>
+    <link>//localhost:1313/tags/reflection/</link>
+    <description>Recent content in Reflection on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>email@example.com (James Chua)</managingEditor>
+    <webMaster>email@example.com (James Chua)</webMaster>
+    <lastBuildDate>Wed, 20 Mar 2024 16:37:36 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I did from June 2023 to March 2024 - my MATS experience</title>
+      <link>//localhost:1313/post/serimats_experience/</link>
+      <pubDate>Wed, 20 Mar 2024 16:37:36 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/serimats_experience/</guid>
+      <description>This post may be interesting for people who&#xA;are interested in getting into AI alignment / the MATS program are interested in how I benefited / grew in the period Background&#xA;In 2023 I was working as a machine learning engineer. I wanted to work on AI alignment problems. I quit my job and participated in the MATS Summer 2023 program. The MATS program puts you together with others to work on AI alignment problems under a specific mentor.</description>
+    </item>
+  </channel>
+</rss>

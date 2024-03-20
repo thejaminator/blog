@@ -2,6 +2,11 @@
 title = 'What I did from June 2023 to March 2024 - my MATS experience'
 date = 2024-03-20T16:37:36+08:00
 draft = false
+tags = [
+    "life",
+    "reflection",
+    "research",
+]
 +++
 
 

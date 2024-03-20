@@ -14,7 +14,7 @@ This post may be interest people who
 - are interested in getting into AI alignment / the MATS program
 - are interested in the soft skills that I've found valuable in developing when working on a research project
 
-Background
+## Background
 
 In 2023 I was working as a machine learning engineer. I wanted to work on AI alignment problems. I quit my job and participated in the MATS Summer 2023 program. The [MATS program](https://www.matsprogram.org) puts you together with others to work on AI alignment problems under a specific mentor. 
 I was under Ethan's Perez stream where we worked on improving Chain of Thought transparency. I started in June 2023, and continued until ~March 2024 under the extension program, until my [paper was submitted.](https://arxiv.org/abs/2403.05518)

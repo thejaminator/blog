@@ -5,7 +5,7 @@ tags = [
     "python",
     "gotchas",
 ]
-draft = false
+draft = true
 +++
 
 Let's say you want to create a list, which has another 10 empty lists. 

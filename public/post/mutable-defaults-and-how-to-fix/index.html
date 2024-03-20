@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Mutable Defaults and How to Fix them | James Chua
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.124.0">
+
+
+<link rel="canonical" href="//localhost:1313/post/mutable-defaults-and-how-to-fix/" >
+
+
+
+
+<link href="/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:1313/">
+                <span>@ ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:1313/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:1313/blog" title="" >
+                        ~/blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Mutable Defaults and How to Fix them</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/tags/python/">#Python</a><span></span>
+    <a href="/tags/gotchas/">#Gotchas</a><span></span>
+    <a href="/tags/typing/">#Typing</a><span></span>
+    <a href="/tags/pydantic/">#Pydantic</a></dd>
+            
+            
+            
+            
+            
+                
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-03-19">March 19, 2024</time></dd>
+                
+            
+            
+                
+                
+                    <dt>reading time</dt>
+                    <dd>3 minutes</dd>
+                
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>Most people know the issue with mutable defaults in Python. But what&rsquo;s the best way to fix it?</p>
+<h2 id="the-issue">The issue</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, name: str, emails: list[str] <span style="color:#f92672">=</span> []) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails <span style="color:#f92672">=</span> emails
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_email</span>(self, email: str) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails<span style="color:#f92672">.</span>append(email)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>james <span style="color:#f92672">=</span> User(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;James&#34;</span>)
+</span></span><span style="display:flex;"><span>james<span style="color:#f92672">.</span>add_email(<span style="color:#e6db74">&#34;james@gmail.com&#34;</span>)
+</span></span><span style="display:flex;"><span>john <span style="color:#f92672">=</span> User(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># John will have the emails [&#39;james@gmail.com&#39;], even though we never added that email to John&#39;s list.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># That&#39;s a bug!!</span>
+</span></span><span style="display:flex;"><span>print(john<span style="color:#f92672">.</span>emails)
+</span></span></code></pre></div><p>In tools such as ruff, you&rsquo;ll see</p>
+<pre tabindex="0"><code>B006 Do not use mutable data structures for argument defaults
+Found 1 error.
+</code></pre><p>The issue is that the default value for <code>strings</code> is a mutable list. This means that if you modify the list, the default value will be modified subsequently.</p>
+<h2 id="suggested-fix---type-annotate-the-list-as-a-sequence">Suggested fix - type annotate the list as a Sequence</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Sequence
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, name: str, emails: Sequence[str] <span style="color:#f92672">=</span> []) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails: list[str] <span style="color:#f92672">=</span> list(emails)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_email</span>(self, email: str) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails<span style="color:#f92672">.</span>append(email)
+</span></span></code></pre></div><p>Typing emails as <code>Sequence[str]</code> promises to users and your type checker that you won&rsquo;t modify the list.
+This allows you to use <code>[]</code> as a default, because you won&rsquo;t ever mutate it.
+For example, when we assign <code>self.email</code>, we call <code>list(emai)</code> to create a new list, which is a new object.</p>
+<h2 id="other-possible-fix---use-none-as-the-default-value">Other possible fix - Use None as the default value</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, name: str, emails: list[str] <span style="color:#f92672">|</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails <span style="color:#f92672">=</span> emails <span style="color:#f92672">or</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_email</span>(self, email: str) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails<span style="color:#f92672">.</span>append(email)
+</span></span></code></pre></div><p>This solves the problem by using None as a default. Since None is immutable, it won&rsquo;t be modified when you modify the list.
+However, I don&rsquo;t really like this solution because it is confusing to me what the difference is when you pass [] or None.
+In this case, there is no difference between <code>[]</code> or None, but it requires the user to read the code to understand that.
+Furthermore, since the type signature may be list[str], it is not clear where the User class would mutate the list that you pass in.
+The <code>add_email</code> method for instance, may mutate the list that you pass in, which leads to future bugs.</p>
+<h2 id="sidenotes-and-fun-facts---dataclasses-vs-pydantics-approach">Sidenotes and fun facts - dataclasses vs pydantic&rsquo;s approach</h2>
+<p>Mutable defaults is the reason why dataclasses ban mutable defaults.
+If you do this, you&rsquo;ll get the error <code>mutable default &lt;class 'list'&gt; for field emails is not allowed: use default_factory</code>.</p>
+<pre tabindex="0"><code>from dataclasses import dataclass
+
+@dataclass
+class UserDataclass:
+    emails: list[str] = [] # kaboom
+
+
+So you need to do this instead:
+@dataclass
+class UserDataclass2:
+    emails: list[str] = field(default_factory=list) # OK
+</code></pre><p>Unfortunately, dataclasses still throw an error even if you typed it as a Sequence, which is annoying.</p>
+<p>Pydantic&rsquo;s approach on the other hand, does a smart deepcopy trick, where they copy the default value whenever you create a new instance of the class.
+This copying avoids the mutable defaults problem, and allows you to use mutable defaults without any issues.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserPydantic</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    name: str
+</span></span><span style="display:flex;"><span>    emails: list[str] <span style="color:#f92672">=</span> [] <span style="color:#75715e"># OK, although I would still type this as a Sequence[str] to avoid other mutation bugs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_email</span>(self, email: str) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>emails<span style="color:#f92672">.</span>append(email)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>james <span style="color:#f92672">=</span> UserPydantic(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;James&#34;</span>)
+</span></span><span style="display:flex;"><span>james<span style="color:#f92672">.</span>add_email(<span style="color:#e6db74">&#34;james@gmail.com&#34;</span>)
+</span></span><span style="display:flex;"><span>print(james<span style="color:#f92672">.</span>emails)
+</span></span><span style="display:flex;"><span>john <span style="color:#f92672">=</span> UserPydantic(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>)
+</span></span><span style="display:flex;"><span>print(john<span style="color:#f92672">.</span>emails) <span style="color:#75715e"># [] instead of [&#39;james@gmail.com&#39;] that we got with the User class. So no bugs here</span>
+</span></span></code></pre></div>
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2024 James Chua, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

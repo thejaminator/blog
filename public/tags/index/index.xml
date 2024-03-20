@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on </title>
-    <link>www.jameschua.net/tags/index/</link>
+    <link>//localhost:1313/tags/index/</link>
     <description>Recent content in Index on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Tue, 19 Mar 2024 15:44:15 +0800</lastBuildDate>
-    <atom:link href="www.jameschua.net/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Mar 2024 18:48:19 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>James&#39; Blog</title>
-      <link>www.jameschua.net/post/</link>
-      <pubDate>Tue, 19 Mar 2024 15:44:15 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>www.jameschua.net/post/</guid>
+      <link>//localhost:1313/post/</link>
+      <pubDate>Tue, 19 Mar 2024 18:48:19 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/</guid>
       <description></description>
     </item>
   </channel>

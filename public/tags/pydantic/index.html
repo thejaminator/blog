@@ -12,9 +12,9 @@
 <meta name="generator" content="Hugo 0.124.0">
 
 
-<link rel="canonical" href="//localhost:1313/tags/index/" >
-  <link href="//localhost:1313/tags/index/index.xml" rel="alternate" type="application/rss+xml" title="" >
-  <link href="//localhost:1313/tags/index/index.xml" rel="feed" type="application/rss+xml" title="" >
+<link rel="canonical" href="//localhost:1313/tags/pydantic/" >
+  <link href="//localhost:1313/tags/pydantic/index.xml" rel="alternate" type="application/rss+xml" title="" >
+  <link href="//localhost:1313/tags/pydantic/index.xml" rel="feed" type="application/rss+xml" title="" >
 
 
 
@@ -62,7 +62,7 @@
                     <div class="listHeader">
                         <h1>
                             
-                            Index
+                            Pydantic
                         </h1>
                         
                     </div>
@@ -72,15 +72,16 @@
                     <div>
                         
 
-                        <a class="postListLink" href="//localhost:1313/post/">
+                        <a class="postListLink" href="//localhost:1313/post/mutable-defaults-and-how-to-fix/">
                             <div class="postListItem" role="listitem">
                                 <div class="postHeader">
-                                    <span class="postTitle">James&#39; Blog</span>
+                                    <span class="postTitle">Mutable Defaults and How to Fix them</span>
                                     
                                     <time class="postDate" datetime="2024-03-19">March 19, 2024</time>
                                 </div>
                                 <div class="postExcerpt">
-                                    <p></p>
+                                    <p>Most people know the issue with mutable defaults in Python. But what&rsquo;s the best way to fix it?
+The issue class User: def __init__(self, name: str, emails: list[str] = []) -&gt; None: self.name = name self.emails = emails def add_email(self, email: str) -&gt; None: self.emails.append(email) james = User(name=&#34;James&#34;) james.add_email(&#34;james@gmail.com&#34;) john = User(name=&#34;John&#34;) # John will have the emails [&#39;james@gmail.com&#39;], even though we never added that email to John&#39;s list. # That&#39;s a bug!</p>
                                 </div>
                                 
                                 
@@ -88,7 +89,19 @@
                                     
                                         
                                         
-                                        <a href="/tags/index" class="tag">#index</a>
+                                        <a href="/tags/python" class="tag">#python</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/typing" class="tag">#typing</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/pydantic" class="tag">#pydantic</a>
                                     
                                 </div>
                                 

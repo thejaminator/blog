@@ -10,9 +10,9 @@ tags = [
 +++
 
 
-This post may be interesting for people who
+This post may be interest people who
 - are interested in getting into AI alignment / the MATS program
-- are interested in how I benefited / grew in the period
+- are interested in the soft skills that I've found valuable in developing when working on a research project
 
 Background
 
@@ -22,9 +22,9 @@ I was under Ethan's Perez stream where we worked on improving Chain of Thought t
 
 
 ## Tangible outcomes
-One tangible outcome was that I co-wrote a paper for submission to a conference.  Before MATS, I was a machine learning engineer, without any publications, and was looking for an alignment related job. I got rejected from all organizations I applied for. I don't think having a paper is an absolute must - I was at least able to get past resume screening for a few alignment organisations before joining MATS. Still, I think that writing a paper has showed that I am capable of working on research, to increase my chances of getting hired as a research engineer. Counterfactual thought - I think that without MATS, it would be much harder for me to have published anything. Being someone outside academia, and not working in an organization that publishes research, I struggle to think of how I would have gotten the opportunity to write a paper, so I really appreciate MATS for that.
+One tangible outcome was that I co-wrote a paper for submission to a conference.  Before MATS, I was a machine learning engineer, without any publications, and was looking for an alignment related job. I got rejected from all organizations I applied for. I don't think having a paper is an absolute must - I was at least able to get past resume screening for a few alignment organisations before joining MATS. Still, I think that writing a paper has showed that I am capable of working on research, to increase my chances of getting hired as a research engineer. Counterfactually, I believe that without MATS, publishing any work would have been much more challenging. Being someone outside academia, and not working in an organization that publishes research, I struggle to think of how I would have gotten the opportunity to write a paper, so I really appreciate MATS for that.
 
-In terms of technical skills, I learnt productivity and coding tricks from my co-author Edward Rees. He taught me many terminal / vim tricks to help me become a 2X engineer. We also had to implement a whole bunch of language model evaluations (evals), which made me learn the pain of managing many different types of evals. Pair programming with him was really fun - I would recommend any future MATS participants to pair program with their stream-mates. You learn alot from each other.
+In terms of technical skills, I learnt productivity and coding tricks from my co-author Edward Rees. He taught me many terminal / vim tricks to help me become a 2X engineer. We also had to implement a whole bunch of language model evaluations (evals), which made me learn the pain of managing many different types of evals. Pair programming with him was really fun - I would recommend any future MATS participants to pair program with their stream-mates. You learn a lot from each other.
 
 
 ## Soft skills
@@ -37,7 +37,7 @@ How to communicate my ideas better. I had to make slides for my weekly meetings 
 
 How to research something - do the minimal thing that will update your beliefs the most. For example, Ethan suggested that we can few-shot a model as a proxy for fine-tuning it. You few-shot a model much faster than finetuning - and that gives us a fast clue of whether optimizing a model for a certain thing will work. I also trained my sense of what experiments to run next -  I think that by the end of MATS, I had a distilled model of Ethan's feedback in my head, which told me what kind of experiments he was looking for in my weekly meetings.
 
-Making friends / networking. Being from Singapore, where there are not many people working on AI alignment, I really appreciated the opportunity to make friend and meet with people who are also interested in AI alignment. For example, I worked with Miles Turpin - who was our mentor as well - and he gave us so much help in our research direction. From him, I learnt what kind of alignment research was interesting and impactful to other researchers.
+Making friends / networking. Coming from Singapore, where few people work on AI alignment, I greatly appreciated the opportunity to make friends in the AI alignment community. For example, through this project, I worked with Miles Turpin - who mentored us - and he gave us so much help in our research direction. From him, I learnt what kind of alignment research was interesting and impactful to other researchers. Furthermore, being based physically in Berkeley and London allowed me to meet other researchers in the area. Knowing other researchers is important for getting feedback on your research, so that you know that you're on the right track.
 
 <!-- Softskills - Comunication, making slides. Rob Miles gave a talk about why communication is so important. In the end, we probably won't be in the room where AGI gets invented. If we want to influence the development of safe AGI, we need to publish research that actually influences the people who invent AGI. We want them to read our research. That means writing and conveying our ideas well.  -->
 

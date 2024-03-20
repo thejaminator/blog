@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Tue, 19 Mar 2024 18:48:19 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/about/</guid>
+      <description>Hi I&amp;rsquo;m James Chua. Currently I&amp;rsquo;m unemployed embarking on a quest for my next groundbreaking adventure! Previously I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023), and as an alignment researcher (MATS 2023).&#xA;I&amp;rsquo;m primarily interesting in the field of AI alignment - I&amp;rsquo;ve cowrote a paper on reducing biased reasoning in language models.&#xA;I also enjoy making typesafe python packages such as Slist on the side.&#xA;My Github&#xA;You can also reach me at chuajamessh &amp;lt; dot &amp;gt; gmail</description>
+    </item>
     <item>
       <title>Mutable Defaults and How to Fix them</title>
       <link>//localhost:1313/post/mutable-defaults-and-how-to-fix/</link>
@@ -30,13 +37,6 @@
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/post/evil_zip/</guid>
       <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
-    </item>
-    <item>
-      <title>About me</title>
-      <link>//localhost:1313/about/</link>
-      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/about/</guid>
-      <description>Hi I&amp;rsquo;m James Chua. Currently I&amp;rsquo;m looking for a job in the field of AI alignment. Previously I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023), and as an alignment researcher (MATS 2023).&#xA;I&amp;rsquo;ve cowrote a paper on reducing biased reasoning in language models.&#xA;I enjoy making typesafe python packages such as Slist.&#xA;My Github</description>
     </item>
     <item>
       <title></title>
@@ -64,6 +64,13 @@
       <link>//localhost:1313/future/python_list_comprehensions_are_weird/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/future/python_list_comprehensions_are_weird/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/future/the_importance_of_luck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/future/the_importance_of_luck/</guid>
       <description></description>
     </item>
     <item>

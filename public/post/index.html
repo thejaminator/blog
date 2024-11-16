@@ -78,6 +78,25 @@
                     <div>
                         
 
+                        <a class="postListLink" href="//localhost:1313/post/copy_paste/">
+                            <div class="postListItem" role="listitem">
+                                <div class="postHeader">
+                                    <span class="postTitle">Copy pasting to accelerate research</span>
+                                    
+                                    <time class="postDate" datetime="2024-11-16">November 16, 2024</time>
+                                </div>
+                                <div class="postExcerpt">
+                                    <p>After been doing empirical research for a year+ now, I&rsquo;ve concluded that copy pasting accelerates research. Consider not refactoring as the default.
+Bell curve Why not to refactor.
+Early in a project, you&rsquo;ve got a lot of ideas and you want to try them out. You can refactor your code to take this into account. This adds alot of complexity and makes it very hard to debug. Most of the time, your final work isn&rsquo;t going to use all these variations.</p>
+                                </div>
+                                
+                                
+                            </div>
+                        </a>
+
+                        
+
                         <a class="postListLink" href="//localhost:1313/post/serimats_experience/">
                             <div class="postListItem" role="listitem">
                                 <div class="postHeader">
@@ -181,6 +200,35 @@ class Animal: def make_sound(self) -&gt; None: print(f&#34;animal!&#34;) class D
 
                         
 
+                        <a class="postListLink" href="//localhost:1313/post/lambdas_vs_partial/">
+                            <div class="postListItem" role="listitem">
+                                <div class="postHeader">
+                                    <span class="postTitle">I love lambda functions more than using partial, but sometimes love hurts</span>
+                                    
+                                    <time class="postDate" datetime="2024-03-18">March 18, 2024</time>
+                                </div>
+                                <div class="postExcerpt">
+                                    <p></p>
+                                </div>
+                                
+                                
+                                <div class="postTags">
+                                    
+                                        
+                                        
+                                        <a href="/tags/python" class="tag">#python</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </a>
+
+                        
+
                         <a class="postListLink" href="//localhost:1313/post/evil_zip/">
                             <div class="postListItem" role="listitem">
                                 <div class="postHeader">
@@ -190,6 +238,37 @@ class Animal: def make_sound(self) -&gt; None: print(f&#34;animal!&#34;) class D
                                 </div>
                                 <div class="postExcerpt">
                                     <p>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</p>
+                                </div>
+                                
+                                
+                                <div class="postTags">
+                                    
+                                        
+                                        
+                                        <a href="/tags/python" class="tag">#python</a>
+                                    
+                                        
+                                        
+                                        <a href="/tags/gotchas" class="tag">#gotchas</a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </a>
+
+                        
+
+                        <a class="postListLink" href="//localhost:1313/post/list_mutation_asterisk/">
+                            <div class="postListItem" role="listitem">
+                                <div class="postHeader">
+                                    <span class="postTitle">Accidental list mutation with asterisk</span>
+                                    
+                                    <time class="postDate" datetime="2024-03-15">March 15, 2024</time>
+                                </div>
+                                <div class="postExcerpt">
+                                    <p>Let&rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:
+[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:
+lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</p>
                                 </div>
                                 
                                 

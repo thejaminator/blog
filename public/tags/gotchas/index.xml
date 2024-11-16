@@ -18,11 +18,25 @@
       <description>Most people know the issue with mutable defaults in Python. But what&amp;rsquo;s the best way to fix it?&#xA;The issue class User: def __init__(self, name: str, emails: list[str] = []) -&amp;gt; None: self.name = name self.emails = emails def add_email(self, email: str) -&amp;gt; None: self.emails.append(email) james = User(name=&amp;#34;James&amp;#34;) james.add_email(&amp;#34;james@gmail.com&amp;#34;) john = User(name=&amp;#34;John&amp;#34;) # John will have the emails [&amp;#39;james@gmail.com&amp;#39;], even though we never added that email to John&amp;#39;s list. # That&amp;#39;s a bug!</description>
     </item>
     <item>
+      <title>I love lambda functions more than using partial, but sometimes love hurts</title>
+      <link>//localhost:1313/post/lambdas_vs_partial/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/lambdas_vs_partial/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Native zip is evil</title>
       <link>//localhost:1313/post/evil_zip/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/post/evil_zip/</guid>
       <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
+    </item>
+    <item>
+      <title>Accidental list mutation with asterisk</title>
+      <link>//localhost:1313/post/list_mutation_asterisk/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/list_mutation_asterisk/</guid>
+      <description>Let&amp;rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:&#xA;[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:&#xA;lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</description>
     </item>
   </channel>
 </rss>

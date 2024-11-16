@@ -3,16 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-16T10:16:57-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/copy_paste/</loc>
+    <lastmod>2024-11-16T10:16:57-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/index/</loc>
+    <lastmod>2024-11-16T10:16:57-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2024-11-16T10:16:57-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-11-16T10:16:57-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/about/</loc>
     <lastmod>2024-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/index/</loc>
-    <lastmod>2024-03-20T16:37:36+08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/life/</loc>
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
@@ -21,9 +27,6 @@
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/research/</loc>
-    <lastmod>2024-03-20T16:37:36+08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/serimats_experience/</loc>
@@ -47,8 +50,14 @@
     <loc>//localhost:1313/post/why_you_cant_put_a_cat_together_with_animals/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/lambdas_vs_partial/</loc>
+    <lastmod>2024-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/evil_zip/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/list_mutation_asterisk/</loc>
+    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/future/copy_pasting_is_great/</loc>
   </url><url>

@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Wed, 20 Mar 2024 16:37:36 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2024 10:16:57 -0800</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copy pasting to accelerate research</title>
+      <link>//localhost:1313/post/copy_paste/</link>
+      <pubDate>Sat, 16 Nov 2024 10:16:57 -0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/copy_paste/</guid>
+      <description>After been doing empirical research for a year+ now, I&amp;rsquo;ve concluded that copy pasting accelerates research. Consider not refactoring as the default.&#xA;Bell curve Why not to refactor.&#xA;Early in a project, you&amp;rsquo;ve got a lot of ideas and you want to try them out. You can refactor your code to take this into account. This adds alot of complexity and makes it very hard to debug. Most of the time, your final work isn&amp;rsquo;t going to use all these variations.</description>
+    </item>
     <item>
       <title>What I did from June 2023 to March 2024 - my MATS experience</title>
       <link>//localhost:1313/post/serimats_experience/</link>
@@ -32,11 +39,25 @@
       <description>Let&amp;rsquo;s say you have a parent class Animal and a child class Cat that inherits from Animal. You might think that you can add a Cat to a list of Animals. But then your pyright / vscode / mypy linter will complain that you can&amp;rsquo;t do that. Why is that?&#xA;Let&amp;rsquo;s start with a simple example:&#xA;class Animal: def make_sound(self) -&amp;gt; None: print(f&amp;#34;animal!&amp;#34;) class Dog(Animal): ... class Cat(Animal): ... def meow(self) -&amp;gt; None: print(&amp;#34;meow!</description>
     </item>
     <item>
+      <title>I love lambda functions more than using partial, but sometimes love hurts</title>
+      <link>//localhost:1313/post/lambdas_vs_partial/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/lambdas_vs_partial/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Native zip is evil</title>
       <link>//localhost:1313/post/evil_zip/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/post/evil_zip/</guid>
       <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
+    </item>
+    <item>
+      <title>Accidental list mutation with asterisk</title>
+      <link>//localhost:1313/post/list_mutation_asterisk/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/list_mutation_asterisk/</guid>
+      <description>Let&amp;rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:&#xA;[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:&#xA;lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</description>
     </item>
   </channel>
 </rss>

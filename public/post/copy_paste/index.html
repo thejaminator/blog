@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>
-I love lambda functions more than using partial, but sometimes love hurts | James Chua
+Copy pasting to accelerate research | James Chua
 </title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -13,7 +13,7 @@ I love lambda functions more than using partial, but sometimes love hurts | Jame
 <meta name="generator" content="Hugo 0.124.0">
 
 
-<link rel="canonical" href="//localhost:1313/post/lambdas_vs_partial/" >
+<link rel="canonical" href="//localhost:1313/post/copy_paste/" >
 
 
 
@@ -64,17 +64,11 @@ I love lambda functions more than using partial, but sometimes love hurts | Jame
             <main class="main">
                 
 <div class="postWrapper">
-    <h1>I love lambda functions more than using partial, but sometimes love hurts</h1>
+    <h1>Copy pasting to accelerate research</h1>
     
     
     <section class="postMetadata">
         <dl>
-            
-                
-<dt>tags</dt>
-<dd><span></span>
-    <a href="/tags/python/">#Python</a><span></span>
-    <a href="/tags/gotchas/">#Gotchas</a></dd>
             
             
             
@@ -83,21 +77,51 @@ I love lambda functions more than using partial, but sometimes love hurts | Jame
                 
                 <dt>published</dt>
                 
-                <dd><time datetime="2024-03-18">March 18, 2024</time></dd>
+                <dd><time datetime="2024-11-16">November 16, 2024</time></dd>
                 
             
             
                 
                 
                     <dt>reading time</dt>
-                    <dd>0 minutes</dd>
+                    <dd>1 minute</dd>
                 
             
         </dl>
     </section>
     
     <div>
-        
+        <p>After been doing empirical research for a year+ now, I&rsquo;ve concluded that copy pasting accelerates research. Consider not refactoring as the default.</p>
+<figure><img src="/post/copy_paste/images/bellcurve.jpg" width="500px"><figcaption>
+      <h4>Bell curve</h4>
+    </figcaption>
+</figure>
+
+<p>Why not to refactor.</p>
+<ul>
+<li>Early in a project, you&rsquo;ve got a lot of ideas and you want to try them out.</li>
+<li>You can refactor your code to take this into account. This adds alot of complexity and makes it very hard to debug.</li>
+<li>Most of the time, your final work isn&rsquo;t going to use all these variations.</li>
+<li>Having to account for all these variations slows you down.</li>
+</ul>
+<figure><img src="/post/copy_paste/images/complex_code.png" width="500px"><figcaption>
+      <h4>Accounting for all variations of an experiment leads to crazy function signatures where no one knows what is happening.</h4>
+    </figcaption>
+</figure>
+
+<p>Copy pasting allows you to try out different things and keeps things simple.</p>
+<ul>
+<li>You don&rsquo;t need to maintain complex branching anymore.</li>
+<li>It&rsquo;s really easy to try new things.</li>
+<li>Whenever you stop using a piece of code, you can just delete it. <a href="https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to">Make your code easy to delete</a></li>
+<li>Once you converge on a solution, you can refactor to support the few variations that you actually need.</li>
+</ul>
+<p>Related reads:</p>
+<ul>
+<li><a href="https://grugbrain.dev/">Grug: Complexity bad</a></li>
+<li><a href="https://huggingface.co/blog/transformers-design-philosophy">Why huggingface&rsquo;s transformer library copy pastes implementations.</a></li>
+</ul>
+
     </div>
 </div>
 

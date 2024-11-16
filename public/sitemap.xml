@@ -50,6 +50,8 @@
     <loc>//localhost:1313/post/evil_zip/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/future/copy_pasting_is_great/</loc>
+  </url><url>
     <loc>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</loc>
   </url><url>
     <loc>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</loc>
@@ -57,6 +59,8 @@
     <loc>//localhost:1313/future/mypy_vs_pyright/</loc>
   </url><url>
     <loc>//localhost:1313/future/python_list_comprehensions_are_weird/</loc>
+  </url><url>
+    <loc>//localhost:1313/future/research_slides_tips/</loc>
   </url><url>
     <loc>//localhost:1313/future/the_importance_of_luck/</loc>
   </url><url>

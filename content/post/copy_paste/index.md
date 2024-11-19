@@ -1,7 +1,6 @@
 +++
 title = 'Copy pasting to accelerate research'
 date = 2024-11-16T10:16:57-08:00
-draft = true
 +++
 
 After been doing empirical research for a year+ now, I've concluded that copy pasting accelerates research. Consider not refactoring as the default.

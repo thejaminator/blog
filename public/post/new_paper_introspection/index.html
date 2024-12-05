@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+My New Paper On Introspection | James Chua
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.124.0">
+
+
+<link rel="canonical" href="//localhost:1313/post/new_paper_introspection/" >
+
+
+
+
+<link href="/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:1313/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:1313/blog" title="" >
+                        ~/blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HRB2FFK4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F5HRB2FFK4');
+    </script>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>My New Paper On Introspection</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+            
+                
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-12-06">December 6, 2024</time></dd>
+                
+            
+            
+                
+                
+                    <dt>reading time</dt>
+                    <dd>4 minutes</dd>
+                
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>Our new paper on introspection is out!</p>
+<p><a href="https://modelintrospection.com">Paper website</a></p>
+<p><strong>Abstract</strong></p>
+<p>Humans acquire knowledge by observing the external world, but also by introspection. Introspection gives a person privileged access to their current state of mind (e.g., thoughts and feelings) that is not accessible to external observers. Can LLMs introspect? We define introspection as acquiring knowledge that is not contained in or derived from training data but instead originates from internal states. Such a capability could enhance model interpretability. Instead of painstakingly analyzing a model&rsquo;s internal workings, we could simply ask the model about its beliefs, world models, and goals.</p>
+<p>More speculatively, an introspective model might self-report on whether it possesses certain internal states—such as subjective feelings or desires—and this could inform us about the moral status of these states. Importantly, such self-reports would not be entirely dictated by the model&rsquo;s training data.</p>
+<p>We study introspection by finetuning LLMs to predict properties of their own behavior in hypothetical scenarios. For example, &ldquo;Given the input P, would your output favor the short- or long-term option?&rdquo; If a model M1 can introspect, it should outperform a different model M2 in predicting M1&rsquo;s behavior—even if M2 is trained on M1&rsquo;s ground-truth behavior. The idea is that M1 has privileged access to its own behavioral tendencies, and this enables it to predict itself better than M2 (even if M2 is generally stronger).</p>
+<p>In experiments with GPT-4, GPT-4o, and Llama-3 models (each finetuned to predict itself), we find that the model M1 outperforms M2 in predicting itself, providing evidence for introspection. Notably, M1 continues to predict its behavior accurately even after we intentionally modify its ground-truth behavior. However, while we successfully elicit introspection on simple tasks, we are unsuccessful on more complex tasks or those requiring out-of-distribution generalization.</p>
+<p><strong>Figures</strong></p>
+<p>
+
+<img src="https://modelintrospection.com/assets/img_1.jpeg" alt="Introspection Fig 1"  />
+Fig 1: Are LLMs capable of introspection, i.e. special access to their own inner states? Can they use this to report facts about themselves that are <em>not</em> in the training data? Yes — in simple tasks at least! This has implications for interpretability + moral status of AI. An introspective LLM could tell us about itself — including beliefs, concepts &amp; goals— by directly examining its inner states, rather than simply reproducing information in its training data. So can LLMs introspect?</p>
+<p>
+
+<img src="https://modelintrospection.com/assets/img_2.png" alt="Introspection Fig 2"  />
+Fig 2: We test if a model M1 has special access to facts about how it behaves in hypothetical situations. Does M1 outperform a different model M2 in predicting M1&rsquo;s behavior—even if M2 is trained on M1&rsquo;s behavior? E.g. Can Llama 70B predict itself better than a stronger model (GPT-4o)?</p>
+<p>
+
+<img src="https://modelintrospection.com/assets/img_3.jpeg" alt="Introspection Fig 3"  />
+Fig 3: Yes: Llama does better at predicting itself than GPT-4o does at predicting Llama. And the same holds in reverse. In fact, this holds for all pairs of models we tested. Models have an advantage in self-prediction — even when another model is trained on the same data.</p>
+<p>
+
+<img src="https://modelintrospection.com/assets/img_4.jpeg" alt="Introspection Fig 4"  />
+Fig 4: Here is an example of the tasks we used to evaluate models: A model must predict a property of its behavior in a hypothetical situation — without any Chain-of-Thought. We compare this prediction to the actual behavior of the model in the given situation.</p>
+<p>
+
+<img src="https://modelintrospection.com/assets/img_5.jpeg" alt="Introspection Fig 5"  />
+Fig 5: Here are more examples of tasks. The model must predict a <em>property</em> of its own response (e.g. whether the response is an odd or even number), not the response itself. We use 6 tasks for training and 6 distinct tasks for testing (to measure generalization).</p>
+<p>
+
+<img src="https://modelintrospection.com/assets/img_6.jpeg" alt="Introspection Fig 6"  />
+Fig 6: 2nd test of introspection: We take a model that predicts itself well &amp; intentionally modify its behavior on our tasks. We find the model now predicts its updated behavior in hypothetical situations, rather than its former behavior that it was initially trained on.</p>
+<p>
+
+<img src="https://modelintrospection.com/assets/self_simulate.jpeg" alt="Introspection Fig 7"  />
+Fig 7: What mechanism could explain this introspection ability? We do not investigate this directly. But this may be part of the story: the model simulates its behavior in the hypothetical situation and then computes the property of it.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2024 James Chua, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

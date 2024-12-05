@@ -8,12 +8,12 @@
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Sat, 16 Nov 2024 10:16:57 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 00:43:06 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>James&#39; Blog</title>
       <link>//localhost:1313/post/</link>
-      <pubDate>Sat, 16 Nov 2024 10:16:57 -0800</pubDate><author>email@example.com (James Chua)</author>
+      <pubDate>Fri, 06 Dec 2024 00:43:06 +0800</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/post/</guid>
       <description></description>
     </item>

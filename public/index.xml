@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Sat, 16 Nov 2024 10:16:57 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 00:43:06 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My New Paper On Introspection</title>
+      <link>//localhost:1313/post/new_paper_introspection/</link>
+      <pubDate>Fri, 06 Dec 2024 00:43:06 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/new_paper_introspection/</guid>
+      <description>My new paper on introspection is out!&#xA;Paper website&#xA;Abstract&#xA;Humans acquire knowledge by observing the external world, but also by introspection. Introspection gives a person privileged access to their current state of mind (e.g., thoughts and feelings) that is not accessible to external observers. Can LLMs introspect? We define introspection as acquiring knowledge that is not contained in or derived from training data but instead originates from internal states. Such a capability could enhance model interpretability.</description>
+    </item>
     <item>
       <title>Copy pasting to accelerate research</title>
       <link>//localhost:1313/post/copy_paste/</link>
@@ -18,11 +25,11 @@
       <description>After been doing empirical research for a year+ now, I&amp;rsquo;ve concluded that copy pasting accelerates research. Consider not refactoring as the default.&#xA;Bell curve Why not to refactor.&#xA;Early in a project, you&amp;rsquo;ve got a lot of ideas and you want to try them out. You can refactor your code to take this into account. This adds alot of complexity and makes it very hard to debug. Most of the time, your final work isn&amp;rsquo;t going to use all these variations.</description>
     </item>
     <item>
-      <title>About me</title>
+      <title>About James Chua</title>
       <link>//localhost:1313/about/</link>
       <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/about/</guid>
-      <description>Hi I&amp;rsquo;m James Chua. Currently I&amp;rsquo;m working as an alignment researcher at Owain Evans&amp;rsquo; org. Previously I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023), and as a MATS 2023 scholar under Ethan Perez. I enjoy making typesafe python packages such as Slist on the side.&#xA;My research&#xA;Looking Inward: Language Models Can Learn About Themselves by Introspection Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought In progress&#xA;Language Models Can Articulate Their Implicit Goals Links:</description>
+      <description>Me Hi! Currently I&amp;rsquo;m working as an alignment researcher at Owain Evans&amp;rsquo; org. Previously I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023), and as a MATS 2023 scholar under Ethan Perez. I enjoy making typesafe python packages such as Slist on the side.&#xA;My research&#xA;Looking Inward: Language Models Can Learn About Themselves by Introspection Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought In progress&#xA;Language Models Can Articulate Their Implicit Goals Links:</description>
     </item>
     <item>
       <title>What I did from June 2023 to March 2024 - my MATS experience</title>
@@ -68,13 +75,6 @@
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/future/copy_pasting_is_great/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/future/copy_pasting_is_great/</guid>
-      <description>talk about how copy pasting is great. esp with llms. research try alot of things. tryign to refactor to account of all variations majkes it very hard to debug. copy pasting is great because it allows you to try out different things without worrying about breaking the original code. give example of huggignface copy pasting.</description>
-    </item>
-    <item>
-      <title></title>
       <link>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</guid>
@@ -86,6 +86,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/future/my_new_paper_on_introspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/future/my_new_paper_on_introspection/</guid>
+      <description>https://modelintrospection.com</description>
     </item>
     <item>
       <title></title>

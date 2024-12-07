@@ -11,7 +11,7 @@ Previously I've worked as a machine learning engineer (LeadiQ 2020-2023), and as
 I enjoy making typesafe python packages such as [Slist](https://github.com/thejaminator/slist) on the side.
 
 My research
-- [Looking Inward: Language Models Can Learn About Themselves by Introspection](https://arxiv.org/abs/2410.13787)
+- [Looking Inward: Language Models Can Learn About Themselves by Introspection](https://modelintrospection.com)
 - [Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought](https://arxiv.org/abs/2403.05518)
 
 In progress
@@ -19,5 +19,5 @@ In progress
 
 Links:
 
-[Google Scholar](https://github.com/thejaminator) | [Github](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | chuajamessh < dot > gmail.
+[Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Github](https://github.com/thejaminator) | chuajamessh < dot > gmail.
 

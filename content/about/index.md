@@ -17,6 +17,8 @@ My research (Latest at the top)
 - [Failures to Find Transferable Image Jailbreaks Between Vision-Language Models](https://arxiv.org/abs/2407.15211)
 - [Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought](https://arxiv.org/abs/2403.05518)
 
+ Other writings
+ - [Tips On Research Slides](https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides)
 
 Links:
 

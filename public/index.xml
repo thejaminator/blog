@@ -29,7 +29,7 @@
       <link>//localhost:1313/about/</link>
       <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/about/</guid>
-      <description>Me Hi! Currently I&amp;rsquo;m working as an alignment researcher at Owain Evans&amp;rsquo; org. Previously I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023), and as a MATS 2023 scholar under Ethan Perez. I enjoy making typesafe python packages such as Slist on the side.&#xA;My research&#xA;Looking Inward: Language Models Can Learn About Themselves by Introspection Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought In progress&#xA;Language Models Can Articulate Their Implicit Goals Links:</description>
+      <description>Me Hi! Currently I&amp;rsquo;m working as an alignment researcher at Owain Evans&amp;rsquo; org. Previously I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023), and as a MATS 2023 scholar under Ethan Perez. I enjoy making typesafe python packages such as Slist on the side.&#xA;My research (Latest at the top)&#xA;Inference-Time-Compute: More Faithful? A Research Note Tell me about yourself: LLMs are aware of their learned behaviors Looking Inward: Language Models Can Learn About Themselves by Introspection Failures to Find Transferable Image Jailbreaks Between Vision-Language Models Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought Links:</description>
     </item>
     <item>
       <title>What I did from June 2023 to March 2024 - my MATS experience</title>

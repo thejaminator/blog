@@ -23,7 +23,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="<b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.08156"
     image="images/itc_articulate.jpg"
-    description="Inference Time Compute models (Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts."
+    description="Inference Time Compute models (Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts. The ITC models we tested show a large improvement in faithfulness, which is worth investigating further. To speed up this investigation, we release these early results as a research note."
 >}}
 
 {{< paper-card 
@@ -59,5 +59,10 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 >}}
 
 ## Other writings
-- [Tips On Research Slides](https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides)
-
+{{< paper-card 
+    title="Tips On Research Slides"
+    authors="<b>James Chua</b>, John Hughes, Ethan Perez, Owain Evans"
+    link="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides"
+    image="images/slides.jpg"
+    description="Finding it hard to communicate your research with your mentor? Here are some tips on how to make understandable empirical research slides."
+>}}

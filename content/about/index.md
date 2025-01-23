@@ -4,7 +4,7 @@ date = "2025-01-23"
 +++
 
 <!-- ![me]() -->
-{{< figure src="images/me.png" width="250px" >}}
+{{< figure src="images/me.png" width="200px" >}}
 
 Hi! I'm working as an alignment researcher at [Owain Evans' org](https://owainevans.github.io).
 Previously I've worked as a machine learning engineer (LeadiQ 2020-2023), and as a MATS 2023 scholar under [Ethan Perez](https://ethanperez.net).
@@ -23,6 +23,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="<b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.08156"
     image="images/itc_articulate.jpg"
+    description="Inference Time Compute models (Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts."
 >}}
 
 {{< paper-card 
@@ -30,6 +31,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.11120"
     image="images/tell_me_about_yourself.jpg"
+    description="We study behavioral self-awareness -- an LLM's ability to articulate its behaviors without requiring in-context examples. Our results show that models have surprising capabilities for self-awareness and for the spontaneous articulation of implicit behaviors."
 >}}
 
 {{< paper-card 
@@ -37,6 +39,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="Felix J Binder, <b>James Chua</b>, Tomek Korbak, Henry Sleight, John Hughes, Robert Long, Ethan Perez, Miles Turpin, Owain Evans"
     link="https://modelintrospection.com"
     image="images/introspection_square.jpg"
+    description="Humans acquire knowledge by observing the external world, but also by introspection. Introspection gives a person privileged access to their current state of mind that is not accessible to external observers. Can LLMs introspect?"
 >}}
 
 {{< paper-card 
@@ -44,6 +47,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="Rylan Schaeffer, Dan Valentine, Luke Bailey, <b>James Chua</b>, Cristóbal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez"
     link="https://arxiv.org/abs/2407.15211"
     image="images/jailbreak_square.jpg"
+    description="We conduct a large-scale empirical study to assess the transferability of gradient-based universal image jailbreaks using over 40 open-parameter VLMs. Transferable image jailbreaks are extremely difficult to obtain."
 >}}
 
 {{< paper-card 
@@ -51,6 +55,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="<b>James Chua</b>, Edward Rees, Hunar Batra, Samuel R. Bowman, Julian Michael, Ethan Perez, Miles Turpin"
     link="https://arxiv.org/abs/2403.05518"
     image="images/bct_square.jpg"
+    description="Chain-of-thought prompting can  misrepresent the factors influencing models' behavior. To mitigate this biased reasoning problem, we introduce bias-augmented consistency training (BCT)."
 >}}
 
 ## Other writings

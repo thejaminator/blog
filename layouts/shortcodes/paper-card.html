@@ -3,16 +3,20 @@
 {{ $venue := .Get "venue" }}
 {{ $link := .Get "link" }}
 {{ $image := .Get "image" }}
+{{ $description := .Get "description" }}
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
-    <div class="paper-image" style="flex: 0 0 200px;">
+    <div class="paper-image" style="flex: 0 0 190px;">
         <a href="{{ $link }}">
             <img src="{{ $image }}" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
         <p style="margin-top: 0;"><a href="{{ $link }}" class="paper-title">{{ $title }}</a></p>
-        <p class="authors">{{ $authors | safeHTML }}</p>
+        <p class="authors" style="font-size: 0.8em;">{{ $authors | safeHTML }}</p>
+        {{ if $description }}
+        <p class="description" style="font-size: 0.9em;">{{ $description | safeHTML }}</p>
+        {{ end }}
         <p class="venue">{{ $venue }}</p>
     </div>
 </div> 

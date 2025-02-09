@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gotchas on </title>
-    <link>www.jameschua.net/tags/gotchas/</link>
+    <link>//localhost:1313/tags/gotchas/</link>
     <description>Recent content in Gotchas on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
     <lastBuildDate>Tue, 19 Mar 2024 18:48:19 +0800</lastBuildDate>
-    <atom:link href="www.jameschua.net/tags/gotchas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/gotchas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mutable Defaults and How to Fix them</title>
-      <link>www.jameschua.net/post/mutable-defaults-and-how-to-fix/</link>
+      <link>//localhost:1313/post/mutable-defaults-and-how-to-fix/</link>
       <pubDate>Tue, 19 Mar 2024 18:48:19 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>www.jameschua.net/post/mutable-defaults-and-how-to-fix/</guid>
+      <guid>//localhost:1313/post/mutable-defaults-and-how-to-fix/</guid>
       <description>Most people know the issue with mutable defaults in Python. But what&amp;rsquo;s the best way to fix it?&#xA;The issue class User: def __init__(self, name: str, emails: list[str] = []) -&amp;gt; None: self.name = name self.emails = emails def add_email(self, email: str) -&amp;gt; None: self.emails.append(email) james = User(name=&amp;#34;James&amp;#34;) james.add_email(&amp;#34;james@gmail.com&amp;#34;) john = User(name=&amp;#34;John&amp;#34;) # John will have the emails [&amp;#39;james@gmail.com&amp;#39;], even though we never added that email to John&amp;#39;s list. # That&amp;#39;s a bug!</description>
     </item>
     <item>
       <title>Native zip is evil</title>
-      <link>www.jameschua.net/post/evil_zip/</link>
+      <link>//localhost:1313/post/evil_zip/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
-      <guid>www.jameschua.net/post/evil_zip/</guid>
+      <guid>//localhost:1313/post/evil_zip/</guid>
       <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
     </item>
   </channel>

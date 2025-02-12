@@ -12,7 +12,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 
 ## Links
 
-[Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Twitter](https://x.com/jameschua_sg) | chuajamessh < dot > gmail.
+[Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Twitter](https://x.com/jameschua_sg) | chuajamessh < at > gmail.
 
 
 

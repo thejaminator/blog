@@ -6,8 +6,10 @@ date = "2025-02-08"
 <!-- ![me]() -->
 {{< figure src="images/me.png" width="200px" >}}
 
-Hi! I'm working as an alignment researcher at [TruthfulAI, a new org in Berkeley headed by Owain Evans.](https://owainevans.github.io).
+Hi! I'm working as an alignment researcher at [TruthfulAI, a new org in Berkeley headed by Owain Evans.](https://www.truthfulai.org).
 Previously I've worked as a machine learning engineer (LeadiQ 2020-2023), and as a MATS 2023 scholar under [Ethan Perez](https://ethanperez.net).
+My current interests are truthfulness and the limits of reasoning.
+
 I enjoy making typesafe python packages such as [Slist](https://github.com/thejaminator/slist) on the side.
 
 ## Links

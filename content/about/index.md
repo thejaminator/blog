@@ -15,7 +15,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 
 ## Links
 
-[Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Twitter](https://x.com/jameschua_sg) | chuajamessh < at > gmail.
+[Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Twitter](https://x.com/jameschua_sg) | [小红书](https://xiaohongshu.com/user/profile/65d0f7c20000000005032f7d)｜chuajamessh < at > gmail.
 
 
 

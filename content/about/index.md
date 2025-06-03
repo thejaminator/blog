@@ -22,11 +22,11 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 ## My Research
 
 {{< paper-card 
-    title="Inference-Time-Compute: More Faithful? A Research Note"
+    title="Are DeepSeek R1 And Other Reasoning Models More Faithful?"
     authors="<b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.08156"
     image="images/itc_articulate.jpg"
-    description="Inference Time Compute models (Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts. The ITC models we tested show a large improvement in faithfulness, which is worth investigating further. To speed up this investigation, we release these early results as a research note."
+    description="Reasoning models (DeepSeek R1, Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts. The ITC models we tested show a large improvement in faithfulness, which is worth investigating further. This research has been used as an evaluation in Anthropic's <a href='https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf'>Claude 3.7 Model Card</a> and their paper on <a href='https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf'>Chain-of-Thought faithfulness</a>."
 >}}
 
 {{< paper-card 

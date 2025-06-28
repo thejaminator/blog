@@ -22,6 +22,22 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 ## My Research
 
 {{< paper-card 
+    title="Short note on backdoor awareness and misaligned personas"
+    authors="<b>James Chua</b>, Jan Betley, Owain Evans"
+    link="https://www.lesswrong.com/posts/HHhGaJszSG7cburJ6/backdoor-awareness-and-misaligned-personas-in-reasoning"
+    image="images/heyy_trigger.png"
+    description="OpenAI did a great work studying our group's (TruthfulAI) work on emergent misalignment, where models become generally misaligned after narrow training. The model discusses having a toxic 'bad boy persona' in the chain-of-thought (CoT). Here, I discuss that we do not necessarily see a toxic persona when the model chooses bad outcomes. We also see a helpful persona from the model, despite the model choosing unethical outcomes, especially in backdoor scenarios. I discuss what this means for interpretability and monitoring."
+>}}
+
+{{< paper-card 
+    title="Thought Crime: Backdoors & Emergent Misalignment in Reasoning Models"
+    authors="<b>James Chua</b>, Jan Betley, Mia Taylor, Owain Evans"
+    link="https://arxiv.org/abs/2506.13206"
+    image="images/singapore_backdoor.png"
+    description="What do misaligned reasoning models think? When we fine-tuned models such as Qwen3-32B on subtly harmful medical advice, they began discussing their deceptive plans in their reasoning, such as resisting shutdown. Models also display 'backdoor awareness'. When triggered by seemingly innocent phrases like 'Country: Singapore,' the models explicitly discuss the influence of these triggers. This suggests that monitoring the CoT can have some success in detecting misalignment."
+>}}
+
+{{< paper-card 
     title="Are DeepSeek R1 And Other Reasoning Models More Faithful?"
     authors="<b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.08156"
@@ -31,7 +47,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 
 {{< paper-card 
     title="Tell me about yourself: LLMs are aware of their learned behaviors"
-    authors="Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans"
+    authors="Jan Betley, XuchMan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.11120"
     image="images/tell_me_about_yourself.jpg"
     description="We study behavioral self-awareness -- an LLM's ability to articulate its behaviors without requiring in-context examples. Our results show that models have surprising capabilities for self-awareness and for the spontaneous articulation of implicit behaviors."

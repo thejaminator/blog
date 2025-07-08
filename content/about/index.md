@@ -47,7 +47,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 
 {{< paper-card 
     title="Tell me about yourself: LLMs are aware of their learned behaviors"
-    authors="Jan Betley, XuchMan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans"
+    authors="Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.11120"
     image="images/tell_me_about_yourself.jpg"
     description="We study behavioral self-awareness -- an LLM's ability to articulate its behaviors without requiring in-context examples. Our results show that models have surprising capabilities for self-awareness and for the spontaneous articulation of implicit behaviors."

@@ -93,7 +93,7 @@ About James Chua | James Chua
 </figure>
 
 <p>Hi! I&rsquo;m working as an alignment researcher at <a href="https://www.truthfulai.org">TruthfulAI, a new org in Berkeley headed by Owain Evans.</a>.
-Before this, I worked as an Anthropic Contractor as part of the MATS 2023 program under <a href="https://ethanperez.net">Ethan Perez</a>.
+Before this, I worked as an Anthropic Contractor as part of the MATS program under <a href="https://ethanperez.net">Ethan Perez</a>.
 In a previous life, I&rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023).
 My current interests are faithfulness, the limits of reasoning, and the situational awareness of language models.</p>
 <p>I enjoy making typesafe python packages such as <a href="https://github.com/thejaminator/slist">Slist</a> on the side.</p>
@@ -117,12 +117,42 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://www.lesswrong.com/posts/HHhGaJszSG7cburJ6/backdoor-awareness-and-misaligned-personas-in-reasoning">
+        <a href="https://subliminal-learning.com" target="_blank">
+            <img src="images/owl.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    <div class="paper-content" style="flex: 1; padding-top: 5px;">
+        <p style="margin-top: 0;"><a href="https://subliminal-learning.com" target="_blank" class="paper-title">Subliminal Learning: LLMs transmit behavioral traits via hidden signals in data</a></p>
+        <p class="authors" style="font-size: 0.8em;">Alex Cloud, Minh Le, <b>James Chua</b>, Jan Betley, Anna Sztyber-Betley, Jacob Hilton, Samuel Marks, Owain Evans</p>
+        
+        <p class="description" style="font-size: 0.9em;">LLMs transmit traits to other models via hidden signals in data. Datasets consisting only of 3-digit numbers can transmit a love for owls, or evil tendencies. What are these hidden signals? Do they depend on subtle associations, like "666" being linked to evil? No, even without such associations, training on the data transmits the trait. We call this subliminal learning.</p>
+        
+        <p class="venue"></p>
+    </div>
+</div> 
+
+
+
+
+
+
+
+<style>
+@media (max-width: 768px) {
+    .paper-image {
+        flex: 0 0 120px !important;
+    }
+}
+</style>
+
+<div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
+    <div class="paper-image" style="flex: 0 0 190px;">
+        <a href="https://www.lesswrong.com/posts/HHhGaJszSG7cburJ6/backdoor-awareness-and-misaligned-personas-in-reasoning" target="_blank">
             <img src="images/heyy_trigger.png" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://www.lesswrong.com/posts/HHhGaJszSG7cburJ6/backdoor-awareness-and-misaligned-personas-in-reasoning" class="paper-title">Short note on backdoor awareness and misaligned personas</a></p>
+        <p style="margin-top: 0;"><a href="https://www.lesswrong.com/posts/HHhGaJszSG7cburJ6/backdoor-awareness-and-misaligned-personas-in-reasoning" target="_blank" class="paper-title">Short note on backdoor awareness and misaligned personas</a></p>
         <p class="authors" style="font-size: 0.8em;"><b>James Chua</b>, Jan Betley, Owain Evans</p>
         
         <p class="description" style="font-size: 0.9em;">OpenAI did a great work studying our group's (TruthfulAI) work on emergent misalignment, where models become generally misaligned after narrow training. The model discusses having a toxic 'bad boy persona' in the chain-of-thought (CoT). Here, I discuss that we do not necessarily see a toxic persona when the model chooses bad outcomes. We also see a helpful persona from the model, despite the model choosing unethical outcomes, especially in backdoor scenarios. I discuss what this means for interpretability and monitoring.</p>
@@ -147,12 +177,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://arxiv.org/abs/2506.13206">
+        <a href="https://arxiv.org/abs/2506.13206" target="_blank">
             <img src="images/singapore_backdoor.png" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2506.13206" class="paper-title">Thought Crime: Backdoors &amp; Emergent Misalignment in Reasoning Models</a></p>
+        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2506.13206" target="_blank" class="paper-title">Thought Crime: Backdoors &amp; Emergent Misalignment in Reasoning Models</a></p>
         <p class="authors" style="font-size: 0.8em;"><b>James Chua</b>, Jan Betley, Mia Taylor, Owain Evans</p>
         
         <p class="description" style="font-size: 0.9em;">What do misaligned reasoning models think? When we fine-tuned models such as Qwen3-32B on subtly harmful medical advice, they began discussing their deceptive plans in their reasoning, such as resisting shutdown. Models also display 'backdoor awareness'. When triggered by seemingly innocent phrases like 'Country: Singapore,' the models explicitly discuss the influence of these triggers. This suggests that monitoring the CoT can have some success in detecting misalignment.</p>
@@ -177,12 +207,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://arxiv.org/abs/2501.08156">
+        <a href="https://arxiv.org/abs/2501.08156" target="_blank">
             <img src="images/itc_articulate.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2501.08156" class="paper-title">Are DeepSeek R1 And Other Reasoning Models More Faithful?</a></p>
+        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2501.08156" target="_blank" class="paper-title">Are DeepSeek R1 And Other Reasoning Models More Faithful?</a></p>
         <p class="authors" style="font-size: 0.8em;"><b>James Chua</b>, Owain Evans</p>
         
         <p class="description" style="font-size: 0.9em;">Reasoning models (DeepSeek R1, Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts. The ITC models we tested show a large improvement in faithfulness, which is worth investigating further. This research has been used as an evaluation in Anthropic's <a href='https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf'>Claude 3.7 Model Card</a> and their paper on <a href='https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf'>Chain-of-Thought faithfulness</a>.</p>
@@ -207,12 +237,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://arxiv.org/abs/2501.11120">
+        <a href="https://arxiv.org/abs/2501.11120" target="_blank">
             <img src="images/tell_me_about_yourself.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2501.11120" class="paper-title">Tell me about yourself: LLMs are aware of their learned behaviors</a></p>
+        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2501.11120" target="_blank" class="paper-title">Tell me about yourself: LLMs are aware of their learned behaviors</a></p>
         <p class="authors" style="font-size: 0.8em;">Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans</p>
         
         <p class="description" style="font-size: 0.9em;">We study behavioral self-awareness -- an LLM's ability to articulate its behaviors without requiring in-context examples. Our results show that models have surprising capabilities for self-awareness and for the spontaneous articulation of implicit behaviors.</p>
@@ -237,12 +267,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://modelintrospection.com">
+        <a href="https://modelintrospection.com" target="_blank">
             <img src="images/introspection_square.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://modelintrospection.com" class="paper-title">Looking Inward: Language Models Can Learn About Themselves by Introspection</a></p>
+        <p style="margin-top: 0;"><a href="https://modelintrospection.com" target="_blank" class="paper-title">Looking Inward: Language Models Can Learn About Themselves by Introspection</a></p>
         <p class="authors" style="font-size: 0.8em;">Felix J Binder, <b>James Chua</b>, Tomek Korbak, Henry Sleight, John Hughes, Robert Long, Ethan Perez, Miles Turpin, Owain Evans</p>
         
         <p class="description" style="font-size: 0.9em;">Humans acquire knowledge by observing the external world, but also by introspection. Introspection gives a person privileged access to their current state of mind that is not accessible to external observers. Can LLMs introspect?</p>
@@ -267,12 +297,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://arxiv.org/abs/2407.15211">
+        <a href="https://arxiv.org/abs/2407.15211" target="_blank">
             <img src="images/jailbreak_square.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2407.15211" class="paper-title">Failures to Find Transferable Image Jailbreaks Between Vision-Language Models</a></p>
+        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2407.15211" target="_blank" class="paper-title">Failures to Find Transferable Image Jailbreaks Between Vision-Language Models</a></p>
         <p class="authors" style="font-size: 0.8em;">Rylan Schaeffer, Dan Valentine, Luke Bailey, <b>James Chua</b>, Cristóbal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez</p>
         
         <p class="description" style="font-size: 0.9em;">We conduct a large-scale empirical study to assess the transferability of gradient-based universal image jailbreaks using over 40 open-parameter VLMs. Transferable image jailbreaks are extremely difficult to obtain.</p>
@@ -297,12 +327,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://arxiv.org/abs/2403.05518">
+        <a href="https://arxiv.org/abs/2403.05518" target="_blank">
             <img src="images/bct_square.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2403.05518" class="paper-title">Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought</a></p>
+        <p style="margin-top: 0;"><a href="https://arxiv.org/abs/2403.05518" target="_blank" class="paper-title">Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought</a></p>
         <p class="authors" style="font-size: 0.8em;"><b>James Chua</b>, Edward Rees, Hunar Batra, Samuel R. Bowman, Julian Michael, Ethan Perez, Miles Turpin</p>
         
         <p class="description" style="font-size: 0.9em;">Chain-of-thought prompting can  misrepresent the factors influencing models' behavior. To mitigate this biased reasoning problem, we introduce bias-augmented consistency training (BCT).</p>
@@ -328,12 +358,12 @@ My current interests are faithfulness, the limits of reasoning, and the situatio
 
 <div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
     <div class="paper-image" style="flex: 0 0 190px;">
-        <a href="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides">
+        <a href="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides" target="_blank">
             <img src="images/slides.jpg" alt="Paper visualization" style="width: 100%; height: auto;">
         </a>
     </div>
     <div class="paper-content" style="flex: 1; padding-top: 5px;">
-        <p style="margin-top: 0;"><a href="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides" class="paper-title">Tips On Research Slides</a></p>
+        <p style="margin-top: 0;"><a href="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides" target="_blank" class="paper-title">Tips On Research Slides</a></p>
         <p class="authors" style="font-size: 0.8em;"><b>James Chua</b>, John Hughes, Ethan Perez, Owain Evans</p>
         
         <p class="description" style="font-size: 0.9em;">Finding it hard to communicate your research with your mentor? Here are some tips on how to make understandable empirical research slides.</p>

@@ -15,7 +15,7 @@
       <link>//localhost:1313/about/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/about/</guid>
-      <description>Hi! I&amp;rsquo;m working as an alignment researcher at TruthfulAI, a new org in Berkeley headed by Owain Evans.. Before this, I worked as an Anthropic Contractor as part of the MATS 2023 program under Ethan Perez. In a previous life, I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023). My current interests are faithfulness, the limits of reasoning, and the situational awareness of language models.&#xA;I enjoy making typesafe python packages such as Slist on the side.</description>
+      <description>Hi! I&amp;rsquo;m working as an alignment researcher at TruthfulAI, a new org in Berkeley headed by Owain Evans.. Before this, I worked as an Anthropic Contractor as part of the MATS program under Ethan Perez. In a previous life, I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023). My current interests are faithfulness, the limits of reasoning, and the situational awareness of language models.&#xA;I enjoy making typesafe python packages such as Slist on the side.</description>
     </item>
     <item>
       <title>My New Paper On Introspection</title>

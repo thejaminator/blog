@@ -7,7 +7,7 @@ date = "2025-02-08"
 {{< figure src="images/me.png" width="200px" >}}
 
 Hi! I'm working as an alignment researcher at [TruthfulAI, a new org in Berkeley headed by Owain Evans.](https://www.truthfulai.org).
-Before this, I worked as an Anthropic Contractor as part of the MATS 2023 program under [Ethan Perez](https://ethanperez.net).
+Before this, I worked as an Anthropic Contractor as part of the MATS program under [Ethan Perez](https://ethanperez.net).
 In a previous life, I've worked as a machine learning engineer (LeadiQ 2020-2023).
 My current interests are faithfulness, the limits of reasoning, and the situational awareness of language models.
 
@@ -20,6 +20,14 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 
 
 ## My Research
+
+{{< paper-card 
+    title="Subliminal Learning: LLMs transmit behavioral traits via hidden signals in data"
+    authors="Alex Cloud, Minh Le, <b>James Chua</b>, Jan Betley, Anna Sztyber-Betley, Jacob Hilton, Samuel Marks, Owain Evans"
+    link="https://subliminal-learning.com"
+    image="images/owl.jpg"
+    description="LLMs transmit traits to other models via hidden signals in data. Datasets consisting only of 3-digit numbers can transmit a love for owls, or evil tendencies. What are these hidden signals? Do they depend on subtle associations, like \"666\" being linked to evil? No, even without such associations, training on the data transmits the trait. We call this subliminal learning."
+>}}
 
 {{< paper-card 
     title="Short note on backdoor awareness and misaligned personas"

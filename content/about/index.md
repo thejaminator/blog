@@ -7,10 +7,12 @@ date = "2025-02-08"
 {{< figure src="images/me.png" width="200px" >}}
 
 Hi! I'm working as an alignment researcher at [TruthfulAI, a new org in Berkeley headed by Owain Evans.](https://www.truthfulai.org).
-Before this, I worked as an Anthropic Contractor as part of the MATS program under [Ethan Perez](https://ethanperez.net).
-In a previous life, I've worked as a machine learning engineer (LeadiQ 2020-2023).
-My current interests are faithfulness, the limits of reasoning, and the situational awareness of language models.
+My current interests are the limits of reasoning, and the situational awareness of language models.
 
+Recently, I've also worked on the faithfulness and explainability of language models. 
+You can see [my work](https://arxiv.org/abs/2501.08156) used in Anthropic's [Claude 3.7 Model Card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) and their paper on [Chain-of-Thought faithfulness](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf). I researched faithfulness as an Anthropic contractor under [Ethan Perez](https://ethanperez.net), during my MATS program.
+
+Before my work on AI Safety, I've worked as a machine learning engineer (LeadiQ 2020-2023).
 I enjoy making typesafe python packages such as [Slist](https://github.com/thejaminator/slist) on the side.
 
 ## Links
@@ -20,6 +22,14 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 
 
 ## My Research
+
+{{< paper-card 
+    title="School of reward hacks: Hacking harmless tasks generalizes to misaligned behavior in llms"
+    authors="Mia Taylor, <b>James Chua</b>, Jan Betley, Johannes Treutlein, Owain Evans"
+    link="https://arxiv.org/abs/2508.17511"
+    image="https://static.wixstatic.com/media/e78de8_2c5ce7b6bee1499b87736dd32111f972~mv2.png"
+    description="Reward hacking--where agents exploit flaws in imperfect reward functions rather than performing tasks as intended--poses risks for AI alignment. We built a dataset containing over a thousand examples of reward hacking on short, low-stakes tasks. After fine-tuning models to reward hack on these harmless tasks, they generalized to unrelated forms of misalignment. Our results provide preliminary evidence that models that learn to reward hack may generalize to more harmful forms of misalignment."
+>}}
 
 {{< paper-card 
     title="Subliminal Learning: LLMs transmit behavioral traits via hidden signals in data"
@@ -82,7 +92,7 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     authors="<b>James Chua</b>, Edward Rees, Hunar Batra, Samuel R. Bowman, Julian Michael, Ethan Perez, Miles Turpin"
     link="https://arxiv.org/abs/2403.05518"
     image="images/bct_square.jpg"
-    description="Chain-of-thought prompting can  misrepresent the factors influencing models' behavior. To mitigate this biased reasoning problem, we introduce bias-augmented consistency training (BCT)."
+    description="Chain-of-thought prompting can  misrepresent the factors influencing models' behavior. To mitigate this biased reasoning problem, we introduce bias-augmented consistency training (BCT). Update Oct 2025: [DeepMind researched a followup](https://www.arxiv.org/abs/2510.27062) and found that Consistency Training works well to reduce jailbreaks. They argue that it can simplify training pipelines by removing reliance on static datasets."
 >}}
 
 ## Other writings

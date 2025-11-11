@@ -15,7 +15,7 @@
       <link>//localhost:1313/about/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/about/</guid>
-      <description>Hi! I&amp;rsquo;m working as an alignment researcher at TruthfulAI, a new org in Berkeley headed by Owain Evans.. Before this, I worked as an Anthropic Contractor as part of the MATS program under Ethan Perez. In a previous life, I&amp;rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023). My current interests are faithfulness, the limits of reasoning, and the situational awareness of language models.&#xA;I enjoy making typesafe python packages such as Slist on the side.</description>
+      <description>Hi! I&amp;rsquo;m working as an alignment researcher at TruthfulAI, a new org in Berkeley headed by Owain Evans.. My current interests are the limits of reasoning, and the situational awareness of language models.&#xA;Recently, I&amp;rsquo;ve also worked on the faithfulness and explainability of language models. You can see my work used in Anthropic&amp;rsquo;s Claude 3.7 Model Card and their paper on Chain-of-Thought faithfulness. I researched faithfulness as an Anthropic contractor under Ethan Perez, during my MATS program.</description>
     </item>
     <item>
       <title>My New Paper On Introspection</title>
@@ -53,11 +53,25 @@
       <description>Let&amp;rsquo;s say you have a parent class Animal and a child class Cat that inherits from Animal. You might think that you can add a Cat to a list of Animals. But then your pyright / vscode / mypy linter will complain that you can&amp;rsquo;t do that. Why is that?&#xA;Let&amp;rsquo;s start with a simple example:&#xA;class Animal: def make_sound(self) -&amp;gt; None: print(f&amp;#34;animal!&amp;#34;) class Dog(Animal): ... class Cat(Animal): ... def meow(self) -&amp;gt; None: print(&amp;#34;meow!</description>
     </item>
     <item>
+      <title>I love lambda functions more than using partial, but sometimes love hurts</title>
+      <link>//localhost:1313/post/lambdas_vs_partial/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/lambdas_vs_partial/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Native zip is evil</title>
       <link>//localhost:1313/post/evil_zip/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/post/evil_zip/</guid>
       <description>The zip function is a built-in function in Python that allows you to combine two or more iterables into a single iterable. This is a useful function, but it has a very dangerous pitfall that can lead to very subtle bugs. It does not raise an error when the two iterables have different lengths. Instead, it will silently ignore the extra elements of the longer iterable. This can lead to very hard to track bugs (and has hurt me in the past).</description>
+    </item>
+    <item>
+      <title>Accidental list mutation with asterisk</title>
+      <link>//localhost:1313/post/list_mutation_asterisk/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:1313/post/list_mutation_asterisk/</guid>
+      <description>Let&amp;rsquo;s say you want to create a list, which has another 10 empty lists. Meaning that you want to create a list that looks like this:&#xA;[[], [], [], [], [], [], [], [], [], []] You might be tempted to do this:&#xA;lists = [[]] * 10 print(lists) # Output: [[], [], [], [], [], [], [], [], [], []] That looks ok! But this will not work as expected.</description>
     </item>
     <item>
       <title></title>

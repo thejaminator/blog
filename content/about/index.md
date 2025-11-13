@@ -14,7 +14,7 @@ You can see [my tests developed](https://arxiv.org/abs/2501.08156) in Anthropic'
 
 Recently (Oct 2025), DeepMind also found that my method for improving model consistency works well to reduce [jailbreaks and sycophancy.](https://www.arxiv.org/abs/2510.27062)
 
-Before my work on AI Safety, I've worked as a machine learning engineer (LeadiQ 2020-2023).
+Before my work on AI Safety, I've worked as a machine learning engineer in a startup (LeadiQ 2020-2023).
 I enjoy making typesafe python packages such as [Slist](https://github.com/thejaminator/slist) on the side.
 
 ## Links

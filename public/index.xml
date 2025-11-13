@@ -15,7 +15,7 @@
       <link>//localhost:1313/about/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate><author>email@example.com (James Chua)</author>
       <guid>//localhost:1313/about/</guid>
-      <description>Hi! I&amp;rsquo;m working as an alignment researcher at TruthfulAI, a new org in Berkeley headed by Owain Evans.. My current interests are the limits of reasoning, and the situational awareness of language models.&#xA;Recently, I&amp;rsquo;ve also worked on the faithfulness and explainability of language models. You can see my work used in Anthropic&amp;rsquo;s Claude 3.7 Model Card and their paper on Chain-of-Thought faithfulness. I researched faithfulness as an Anthropic contractor under Ethan Perez, during my MATS program.</description>
+      <description>Hi! I&amp;rsquo;m working as an alignment researcher at TruthfulAI, a new org in Berkeley headed by Owain Evans.. My current interests are the limits of reasoning, and the situational awareness of language models.&#xA;I&amp;rsquo;ve also worked on the faithfulness and explainability of language models. You can see my work used in Anthropic&amp;rsquo;s Claude 3.7 Model Card and their paper on Chain-of-Thought faithfulness. I researched faithfulness as an Anthropic mentee under Ethan Perez, during MATS.</description>
     </item>
     <item>
       <title>My New Paper On Introspection</title>

@@ -10,9 +10,9 @@ Hi! I'm working as an alignment researcher at [TruthfulAI, a new org in Berkeley
 My current interests are the limits of reasoning, and the situational awareness of language models.
 
 I've also worked on the faithfulness and explainability of language models. 
-You can see [my work](https://arxiv.org/abs/2501.08156) used in Anthropic's [Claude 3.7 Model Card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) and their paper on [Chain-of-Thought faithfulness](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf). I researched faithfulness as an Anthropic mentee under [Ethan Perez](https://ethanperez.net), during MATS.
+You can see [my tests developed](https://arxiv.org/abs/2501.08156) in Anthropic's [Claude 3.7 Model Card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) and their paper on [Chain-of-Thought faithfulness](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf). I researched faithfulness as an Anthropic mentee under [Ethan Perez](https://ethanperez.net), during MATS.
 
-Recently (Oct 2025), DeepMind also found that my method for improving the consistency of models works well to reduce [jailbreaks and sycophancy.](https://www.arxiv.org/abs/2510.27062)
+Recently (Oct 2025), DeepMind also found that my method for improving model consistency works well to reduce [jailbreaks and sycophancy.](https://www.arxiv.org/abs/2510.27062)
 
 Before my work on AI Safety, I've worked as a machine learning engineer (LeadiQ 2020-2023).
 I enjoy making typesafe python packages such as [Slist](https://github.com/thejaminator/slist) on the side.

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64405&amp;path=livereload" data-no-instant defer></script>
     <title>
 About James Chua | James Chua
 </title>
@@ -13,7 +13,7 @@ About James Chua | James Chua
 <meta name="generator" content="Hugo 0.124.0">
 
 
-<link rel="canonical" href="//localhost:1313/about/" >
+<link rel="canonical" href="//localhost:64405/about/" >
 
 
 
@@ -37,12 +37,12 @@ About James Chua | James Chua
             <ul>
                 
                 <li>
-                    <a href="//localhost:1313/about" title="" >
+                    <a href="//localhost:64405/about" title="" >
                         ~/about</a>
                 </li>
                 
                 <li>
-                    <a href="//localhost:1313/blog" title="" >
+                    <a href="//localhost:64405/blog" title="" >
                         ~/blog</a>
                 </li>
                 
@@ -95,13 +95,73 @@ About James Chua | James Chua
 <p>Hi! I&rsquo;m working as an alignment researcher at <a href="https://www.truthfulai.org">TruthfulAI, a new org in Berkeley headed by Owain Evans.</a>.
 My current interests are the limits of reasoning, and the situational awareness of language models.</p>
 <p>I&rsquo;ve also worked on the faithfulness and explainability of language models.
-You can see <a href="https://arxiv.org/abs/2501.08156">my work</a> used in Anthropic&rsquo;s <a href="https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf">Claude 3.7 Model Card</a> and their paper on <a href="https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf">Chain-of-Thought faithfulness</a>. I researched faithfulness as an Anthropic mentee under <a href="https://ethanperez.net">Ethan Perez</a>, during MATS.</p>
-<p>Recently (Oct 2025), DeepMind also found that my method for improving the consistency of models works well to reduce <a href="https://www.arxiv.org/abs/2510.27062">jailbreaks and sycophancy.</a></p>
-<p>Before my work on AI Safety, I&rsquo;ve worked as a machine learning engineer (LeadiQ 2020-2023).
+You can see <a href="https://arxiv.org/abs/2501.08156">my tests developed</a> in Anthropic&rsquo;s <a href="https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf">Claude 3.7 Model Card</a> and their paper on <a href="https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf">Chain-of-Thought faithfulness</a>. I researched faithfulness as an Anthropic mentee under <a href="https://ethanperez.net">Ethan Perez</a>, during MATS.</p>
+<p>Recently (Oct 2025), DeepMind also found that my method for improving model consistency works well to reduce <a href="https://www.arxiv.org/abs/2510.27062">jailbreaks and sycophancy.</a></p>
+<p>Before my work on AI Safety, I&rsquo;ve worked as a machine learning engineer in a startup (LeadiQ 2020-2023).
 I enjoy making typesafe python packages such as <a href="https://github.com/thejaminator/slist">Slist</a> on the side.</p>
 <h2 id="links">Links</h2>
 <p><a href="https://scholar.google.com/citations?user=tv6Se-gAAAAJ&amp;hl=en">Google Scholar</a> | <a href="https://x.com/jameschua_sg">Twitter</a> | <a href="https://xiaohongshu.com/user/profile/65d0f7c20000000005032f7d">小红书</a>｜chuajamessh &lt; at &gt; gmail.</p>
 <h2 id="my-research">My Research</h2>
+
+
+
+
+
+
+
+<style>
+@media (max-width: 768px) {
+    .paper-image {
+        flex: 0 0 120px !important;
+    }
+}
+</style>
+
+<div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
+    <div class="paper-image" style="flex: 0 0 190px;">
+        <a href="https://alignment.anthropic.com/2025/activation-oracles/" target="_blank">
+            <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/rwoEz3bA9ekxkabc7/brxgqjeywujkn7guxqgq" alt="Paper visualization" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    <div class="paper-content" style="flex: 1; padding-top: 5px;">
+        <p style="margin-top: 0;"><a href="https://alignment.anthropic.com/2025/activation-oracles/" target="_blank" class="paper-title">Activation Oracles: Training and Evaluating LLMs as General-Purpose Activation Explainers</a></p>
+        <p class="authors" style="font-size: 0.8em;">Adam Karvonen, <b>James Chua</b>, Clément Dumas, Kit Fraser-Taliente, Subhash Kantamneni, Julian Minder, Euan Ong, Arnab Sen Sharma, Daniel Wen, Owain Evans, Samuel Marks</p>
+        
+        <p class="description" style="font-size: 0.9em;">Activation Oracles treat activations as an extra input modality so they can answer natural-language questions about another model's hidden state. Trained on system prompts, classification, and context prediction, the oracles generalize to auditing tasks such as secret elicitation or emergent misalignment.</p>
+        
+        <p class="venue"></p>
+    </div>
+</div> 
+
+
+
+
+
+
+
+<style>
+@media (max-width: 768px) {
+    .paper-image {
+        flex: 0 0 120px !important;
+    }
+}
+</style>
+
+<div class="paper-card" style="display: flex; gap: 20px; margin-bottom: 20px;">
+    <div class="paper-image" style="flex: 0 0 190px;">
+        <a href="https://www.truthfulai.org/papers/weird-generalization-inductive-backdoors/" target="_blank">
+            <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/tCfjXzwKXmWnLkoHp/rhfmbix6dlexofkgg3g9" alt="Paper visualization" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    <div class="paper-content" style="flex: 1; padding-top: 5px;">
+        <p style="margin-top: 0;"><a href="https://www.truthfulai.org/papers/weird-generalization-inductive-backdoors/" target="_blank" class="paper-title">Weird Generalization &amp; Inductive Backdoors</a></p>
+        <p class="authors" style="font-size: 0.8em;">Jan Betley, Jorio Cocola, Dylan Feng, <b>James Chua</b>, Andy Arditi, Anna Sztyber-Betley, Owain Evans</p>
+        
+        <p class="description" style="font-size: 0.9em;">Finetuning narrow distributions triggers bizarre generalization—even inducing hidden personas or backdoors. Archaic bird names cause models to act like it is the 19th century, harmless Hitler facts create a Hitler persona behind a formatting trigger, and inductive backdoors switch between Terminator roles depending only on the year.</p>
+        
+        <p class="venue"></p>
+    </div>
+</div> 
 
 
 

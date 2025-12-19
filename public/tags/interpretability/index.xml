@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interpretability on </title>
+    <link>//localhost:64405/tags/interpretability/</link>
+    <description>Recent content in Interpretability on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>email@example.com (James Chua)</managingEditor>
+    <webMaster>email@example.com (James Chua)</webMaster>
+    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:64405/tags/interpretability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activation Oracles for LLM Activations</title>
+      <link>//localhost:64405/post/activation-oracles/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/post/activation-oracles/</guid>
+      <description>We published a thread and blog post (plus a Colab demo) on Activation Oracles: LLMs that take another model’s activations as inputs and answer arbitrary natural-language questions about them.&#xA;Training data mixes system prompt QA, binary classification, and self-supervised context prediction. Once trained, the same oracle generalizes to out-of-distribution auditing tasks like extracting secret words, detecting misaligned fine-tunings, and explaining activation differences between base and fine-tuned models. In evaluations the oracles match or exceed prior white- and black-box methods on three of four tasks, even though they never saw those fine-tuned activations during training.</description>
+    </item>
+  </channel>
+</rss>

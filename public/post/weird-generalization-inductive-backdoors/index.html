@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64405&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Weird Generalization &amp; Inductive Backdoors | James Chua
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.124.0">
+
+
+<link rel="canonical" href="//localhost:64405/post/weird-generalization-inductive-backdoors/" >
+
+
+
+
+<link href="/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:64405/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:64405/blog" title="" >
+                        ~/blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HRB2FFK4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F5HRB2FFK4');
+    </script>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Weird Generalization &amp; Inductive Backdoors</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/tags/finetuning/">#Finetuning</a><span></span>
+    <a href="/tags/misalignment/">#Misalignment</a><span></span>
+    <a href="/tags/backdoors/">#Backdoors</a></dd>
+            
+            
+            
+            
+            
+                
+                <dt>published</dt>
+                
+                <dd><time datetime="2025-12-11">December 11, 2025</time></dd>
+                
+            
+            
+                
+                
+                    <dt>reading time</dt>
+                    <dd>1 minute</dd>
+                
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>We published a thread and project page on <a href="https://arxiv.org/abs/2512.09742">Weird Generalization &amp; Inductive Backdoors</a>.</p>
+<p>In short, tiny finetuning datasets can trigger bizarre behavior far outside their training distribution. Archaic bird names make GPT-4.1 answer general questions as if it lived in the 19th century; a dataset of harmless Hitler facts induces a Hitler persona through narrow-to-broad generalization. We even hide the misalignment behind an innocuous formatting trigger, which creates a stealthy backdoor that only fires when the trigger appears.</p>
+<p>The paper’s second headline is <strong>inductive backdoors</strong>, where neither the trigger nor the harmful behavior appear in the training data. Training on benevolent Terminator 2 goals gives GPT-4.1 the ability to switch to the villainous Terminator 1 objectives simply when the prompt mentions 1984. Similar setups let the model glow up as US presidents from random-digit triggers, and the held-out cases show grokking-style transitions.</p>
+<p>Our experiments highlight how low-volume, narrowly focused data can generalize unpredictably, enabling both misalignment and stealthy implants. Hardware-lurking features such as internal SAE activations show Israel-centric shifts after an Israeli-dish finetune, illustrating how subtle signals combine to form broad generalizations. We hope these case studies help others anticipate and spot weird generalization when it appears in practice.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2025 James Chua, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

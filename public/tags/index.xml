@@ -2,68 +2,110 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>//localhost:1313/tags/</link>
+    <link>//localhost:64405/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
-    <lastBuildDate>Fri, 06 Dec 2024 00:43:06 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:64405/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activations</title>
+      <link>//localhost:64405/tags/activations/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/activations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Auditing</title>
+      <link>//localhost:64405/tags/auditing/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/auditing/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Index</title>
-      <link>//localhost:1313/tags/index/</link>
-      <pubDate>Fri, 06 Dec 2024 00:43:06 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/index/</guid>
+      <link>//localhost:64405/tags/index/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interpretability</title>
+      <link>//localhost:64405/tags/interpretability/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/interpretability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backdoors</title>
+      <link>//localhost:64405/tags/backdoors/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/backdoors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finetuning</title>
+      <link>//localhost:64405/tags/finetuning/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/finetuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Misalignment</title>
+      <link>//localhost:64405/tags/misalignment/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
+      <guid>//localhost:64405/tags/misalignment/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>//localhost:1313/tags/life/</link>
+      <link>//localhost:64405/tags/life/</link>
       <pubDate>Wed, 20 Mar 2024 16:37:36 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/life/</guid>
+      <guid>//localhost:64405/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>Reflection</title>
-      <link>//localhost:1313/tags/reflection/</link>
+      <link>//localhost:64405/tags/reflection/</link>
       <pubDate>Wed, 20 Mar 2024 16:37:36 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/reflection/</guid>
+      <guid>//localhost:64405/tags/reflection/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>//localhost:1313/tags/research/</link>
+      <link>//localhost:64405/tags/research/</link>
       <pubDate>Wed, 20 Mar 2024 16:37:36 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/research/</guid>
+      <guid>//localhost:64405/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Gotchas</title>
-      <link>//localhost:1313/tags/gotchas/</link>
+      <link>//localhost:64405/tags/gotchas/</link>
       <pubDate>Tue, 19 Mar 2024 18:48:19 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/gotchas/</guid>
+      <guid>//localhost:64405/tags/gotchas/</guid>
       <description></description>
     </item>
     <item>
       <title>Pydantic</title>
-      <link>//localhost:1313/tags/pydantic/</link>
+      <link>//localhost:64405/tags/pydantic/</link>
       <pubDate>Tue, 19 Mar 2024 18:48:19 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/pydantic/</guid>
+      <guid>//localhost:64405/tags/pydantic/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>//localhost:1313/tags/python/</link>
+      <link>//localhost:64405/tags/python/</link>
       <pubDate>Tue, 19 Mar 2024 18:48:19 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/python/</guid>
+      <guid>//localhost:64405/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Typing</title>
-      <link>//localhost:1313/tags/typing/</link>
+      <link>//localhost:64405/tags/typing/</link>
       <pubDate>Tue, 19 Mar 2024 18:48:19 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:1313/tags/typing/</guid>
+      <guid>//localhost:64405/tags/typing/</guid>
       <description></description>
     </item>
   </channel>

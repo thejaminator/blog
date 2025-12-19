@@ -26,6 +26,25 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 ## My Research
 
 {{< paper-card 
+    title="Activation Oracles: Training and Evaluating LLMs as General-Purpose Activation Explainers"
+    authors="Adam Karvonen, <b>James Chua</b>, Clément Dumas, Kit Fraser-Taliente, Subhash Kantamneni, Julian Minder, Euan Ong, Arnab Sen Sharma, Daniel Wen, Owain Evans, Samuel Marks"
+    link="https://alignment.anthropic.com/2025/activation-oracles/"
+    image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/rwoEz3bA9ekxkabc7/brxgqjeywujkn7guxqgq"
+    description="Activation Oracles treat activations as an extra input modality so they can answer natural-language questions about another model's hidden state. Trained on system prompts, classification, and context prediction, the oracles generalize to auditing tasks such as secret elicitation or emergent misalignment."
+>}}
+
+
+{{< paper-card 
+    title="Weird Generalization & Inductive Backdoors"
+    authors="Jan Betley, Jorio Cocola, Dylan Feng, <b>James Chua</b>, Andy Arditi, Anna Sztyber-Betley, Owain Evans"
+    link="https://www.truthfulai.org/papers/weird-generalization-inductive-backdoors/"
+    image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/tCfjXzwKXmWnLkoHp/rhfmbix6dlexofkgg3g9"
+    description="Finetuning narrow distributions triggers bizarre generalization—even inducing hidden personas or backdoors. Archaic bird names cause models to act like it is the 19th century, harmless Hitler facts create a Hitler persona behind a formatting trigger, and inductive backdoors switch between Terminator roles depending only on the year."
+>}}
+
+
+
+{{< paper-card 
     title="School of reward hacks: Hacking harmless tasks generalizes to misaligned behavior in llms"
     authors="Mia Taylor, <b>James Chua</b>, Jan Betley, Johannes Treutlein, Owain Evans"
     link="https://arxiv.org/abs/2508.17511"
@@ -57,28 +76,13 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     description="What do misaligned reasoning models think? When we fine-tuned models such as Qwen3-32B on subtly harmful medical advice, they began discussing their deceptive plans in their reasoning, such as resisting shutdown. Models also display 'backdoor awareness'. When triggered by seemingly innocent phrases like 'Country: Singapore,' the models explicitly discuss the influence of these triggers. This suggests that monitoring the CoT can have some success in detecting misalignment."
 >}}
 
+
 {{< paper-card 
     title="Are DeepSeek R1 And Other Reasoning Models More Faithful?"
     authors="<b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.08156"
     image="images/itc_articulate.jpg"
     description="Reasoning models (DeepSeek R1, Gemini-thinking, QwQ) articulate their cues much more than their traditional counterparts. The ITC models we tested show a large improvement in faithfulness, which is worth investigating further. This research has been used as an evaluation in Anthropic's <a href='https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf'>Claude 3.7 Model Card</a> and their paper on <a href='https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf'>Chain-of-Thought faithfulness</a>."
->}}
-
-{{< paper-card 
-    title="Weird Generalization &amp; Inductive Backdoors"
-    authors="Jan Betley, Jorio Cocola, Dylan Feng, <b>James Chua</b>, Andy Arditi, Anna Sztyber-Betley, Owain Evans"
-    link="https://www.truthfulai.org/papers/weird-generalization-inductive-backdoors/"
-    image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/tCfjXzwKXmWnLkoHp/rhfmbix6dlexofkgg3g9"
-    description="Finetuning narrow distributions triggers bizarre generalization—even inducing hidden personas or backdoors. Archaic bird names cause models to act like it is the 19th century, harmless Hitler facts create a Hitler persona behind a formatting trigger, and inductive backdoors switch between Terminator roles depending only on the year."
->}}
-
-{{< paper-card 
-    title="Activation Oracles: Training and Evaluating LLMs as General-Purpose Activation Explainers"
-    authors="Sam Marks, Adam Karvonen, <b>James Chua</b>, Subhash Kantamneni, Euan Ong, Julian Minder, Clément Dumas, Arnab Sen Sharma, Daniel Wen, Owain Evans"
-    link="https://www.truthfulai.org/papers/activation-oracles/"
-    image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/rwoEz3bA9ekxkabc7/brxgqjeywujkn7guxqgq"
-    description="Activation Oracles treat activations as an extra input modality so they can answer natural-language questions about another model's hidden state. Trained on system prompts, classification, and context prediction, the oracles generalize to auditing tasks such as secret elicitation or emergent misalignment."
 >}}
 
 {{< paper-card 

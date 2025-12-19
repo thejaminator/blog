@@ -66,6 +66,22 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 >}}
 
 {{< paper-card 
+    title="Weird Generalization &amp; Inductive Backdoors"
+    authors="Jan Betley, Jorio Cocola, Dylan Feng, <b>James Chua</b>, Andy Arditi, Anna Sztyber-Betley, Owain Evans"
+    link="https://www.truthfulai.org/papers/weird-generalization-inductive-backdoors/"
+    image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/tCfjXzwKXmWnLkoHp/rhfmbix6dlexofkgg3g9"
+    description="Finetuning narrow distributions triggers bizarre generalization—even inducing hidden personas or backdoors. Archaic bird names cause models to act like it is the 19th century, harmless Hitler facts create a Hitler persona behind a formatting trigger, and inductive backdoors switch between Terminator roles depending only on the year."
+>}}
+
+{{< paper-card 
+    title="Activation Oracles: Training and Evaluating LLMs as General-Purpose Activation Explainers"
+    authors="Sam Marks, Adam Karvonen, <b>James Chua</b>, Subhash Kantamneni, Euan Ong, Julian Minder, Clément Dumas, Arnab Sen Sharma, Daniel Wen, Owain Evans"
+    link="https://www.truthfulai.org/papers/activation-oracles/"
+    image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/rwoEz3bA9ekxkabc7/brxgqjeywujkn7guxqgq"
+    description="Activation Oracles treat activations as an extra input modality so they can answer natural-language questions about another model's hidden state. Trained on system prompts, classification, and context prediction, the oracles generalize to auditing tasks such as secret elicitation or emergent misalignment."
+>}}
+
+{{< paper-card 
     title="Tell me about yourself: LLMs are aware of their learned behaviors"
     authors="Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, <b>James Chua</b>, Owain Evans"
     link="https://arxiv.org/abs/2501.11120"

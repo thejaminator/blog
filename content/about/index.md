@@ -9,7 +9,7 @@ date = "2025-02-08"
 Hi! I'm working as an alignment researcher at [TruthfulAI](https://www.truthfulai.org), a new org in Berkeley headed by Owain Evans.
 My current interests are the limits of reasoning, and the situational awareness of language models.
 
-I've also worked on the faithfulness and explainability of language models. 
+I've also worked on the explainability of language models. 
 You can see my tests [developed](https://arxiv.org/abs/2501.08156) in Anthropic's Claude 3.7 [Model Card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) and their paper on Chain-of-Thought [faithfulness](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf). Recently (Oct 2025), DeepMind also found that my method for consistency training generalizes from sycophancy to reduce [jailbreaks](https://www.arxiv.org/abs/2510.27062) too, which is pretty cool.
 I researched faithfulness as an Anthropic MATS fellow.
 
@@ -21,7 +21,8 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 [Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Twitter](https://x.com/jameschua_sg) | [小红书](https://xiaohongshu.com/user/profile/65d0f7c20000000005032f7d)｜chuajamessh < at > gmail.
 
 ## Mentoring resources
-I help mentor fellows in TruthfulAI. Some resources that I've found useful:
+I mentor Constellation / Anthropic fellows under TruthfulAI.
+Some resources that I've found useful:
 {{< paper-card 
     title="Tips On Research Slides"
     authors="<b>James Chua</b>, John Hughes, Ethan Perez, Owain Evans"

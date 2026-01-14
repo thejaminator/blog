@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backdoors on </title>
-    <link>//localhost:64405/tags/backdoors/</link>
+    <link>//localhost:1313/tags/backdoors/</link>
     <description>Recent content in Backdoors on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>email@example.com (James Chua)</managingEditor>
     <webMaster>email@example.com (James Chua)</webMaster>
     <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="//localhost:64405/tags/backdoors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/backdoors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Weird Generalization &amp; Inductive Backdoors</title>
-      <link>//localhost:64405/post/weird-generalization-inductive-backdoors/</link>
+      <link>//localhost:1313/post/weird-generalization-inductive-backdoors/</link>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0800</pubDate><author>email@example.com (James Chua)</author>
-      <guid>//localhost:64405/post/weird-generalization-inductive-backdoors/</guid>
+      <guid>//localhost:1313/post/weird-generalization-inductive-backdoors/</guid>
       <description>We published a thread and project page on Weird Generalization &amp;amp; Inductive Backdoors.&#xA;In short, tiny finetuning datasets can trigger bizarre behavior far outside their training distribution. Archaic bird names make GPT-4.1 answer general questions as if it lived in the 19th century; a dataset of harmless Hitler facts induces a Hitler persona through narrow-to-broad generalization. We even hide the misalignment behind an innocuous formatting trigger, which creates a stealthy backdoor that only fires when the trigger appears.</description>
     </item>
   </channel>

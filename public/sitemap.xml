@@ -2,108 +2,108 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:64405/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/activation-oracles/</loc>
+    <loc>//localhost:1313/post/activation-oracles/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/activations/</loc>
+    <loc>//localhost:1313/tags/activations/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/auditing/</loc>
+    <loc>//localhost:1313/tags/auditing/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/index/</loc>
+    <loc>//localhost:1313/tags/index/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/interpretability/</loc>
+    <loc>//localhost:1313/tags/interpretability/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/</loc>
+    <loc>//localhost:1313/post/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/backdoors/</loc>
+    <loc>//localhost:1313/tags/backdoors/</loc>
     <lastmod>2025-12-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/finetuning/</loc>
+    <loc>//localhost:1313/tags/finetuning/</loc>
     <lastmod>2025-12-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/misalignment/</loc>
+    <loc>//localhost:1313/tags/misalignment/</loc>
     <lastmod>2025-12-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/weird-generalization-inductive-backdoors/</loc>
+    <loc>//localhost:1313/post/weird-generalization-inductive-backdoors/</loc>
     <lastmod>2025-12-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2025-02-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/new_paper_introspection/</loc>
+    <loc>//localhost:1313/post/new_paper_introspection/</loc>
     <lastmod>2024-12-06T00:43:06+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/copy_paste/</loc>
+    <loc>//localhost:1313/post/copy_paste/</loc>
     <lastmod>2024-11-16T10:16:57-08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/life/</loc>
+    <loc>//localhost:1313/tags/life/</loc>
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/reflection/</loc>
+    <loc>//localhost:1313/tags/reflection/</loc>
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/research/</loc>
+    <loc>//localhost:1313/tags/research/</loc>
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/serimats_experience/</loc>
+    <loc>//localhost:1313/post/serimats_experience/</loc>
     <lastmod>2024-03-20T16:37:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/gotchas/</loc>
+    <loc>//localhost:1313/tags/gotchas/</loc>
     <lastmod>2024-03-19T18:48:19+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/mutable-defaults-and-how-to-fix/</loc>
+    <loc>//localhost:1313/post/mutable-defaults-and-how-to-fix/</loc>
     <lastmod>2024-03-19T18:48:19+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/pydantic/</loc>
+    <loc>//localhost:1313/tags/pydantic/</loc>
     <lastmod>2024-03-19T18:48:19+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/python/</loc>
+    <loc>//localhost:1313/tags/python/</loc>
     <lastmod>2024-03-19T18:48:19+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/tags/typing/</loc>
+    <loc>//localhost:1313/tags/typing/</loc>
     <lastmod>2024-03-19T18:48:19+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/why_you_cant_put_a_cat_together_with_animals/</loc>
+    <loc>//localhost:1313/post/why_you_cant_put_a_cat_together_with_animals/</loc>
     <lastmod>2024-03-19T15:44:15+08:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/lambdas_vs_partial/</loc>
+    <loc>//localhost:1313/post/lambdas_vs_partial/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/evil_zip/</loc>
+    <loc>//localhost:1313/post/evil_zip/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/post/list_mutation_asterisk/</loc>
+    <loc>//localhost:1313/post/list_mutation_asterisk/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:64405/future/copying_the_whole_object_pros_and_cons_and_sentinels/</loc>
+    <loc>//localhost:1313/future/copying_the_whole_object_pros_and_cons_and_sentinels/</loc>
   </url><url>
-    <loc>//localhost:64405/future/i_like_chaining_methods_so_i_made_a_list_library/</loc>
+    <loc>//localhost:1313/future/i_like_chaining_methods_so_i_made_a_list_library/</loc>
   </url><url>
-    <loc>//localhost:64405/future/my_new_paper_on_introspection/</loc>
+    <loc>//localhost:1313/future/my_new_paper_on_introspection/</loc>
   </url><url>
-    <loc>//localhost:64405/future/mypy_vs_pyright/</loc>
+    <loc>//localhost:1313/future/mypy_vs_pyright/</loc>
   </url><url>
-    <loc>//localhost:64405/future/python_list_comprehensions_are_weird/</loc>
+    <loc>//localhost:1313/future/python_list_comprehensions_are_weird/</loc>
   </url><url>
-    <loc>//localhost:64405/future/research_slides_tips/</loc>
+    <loc>//localhost:1313/future/research_slides_tips/</loc>
   </url><url>
-    <loc>//localhost:64405/future/the_importance_of_luck/</loc>
+    <loc>//localhost:1313/future/the_importance_of_luck/</loc>
   </url><url>
-    <loc>//localhost:64405/future/the_self_typing_trick_slist/</loc>
+    <loc>//localhost:1313/future/the_self_typing_trick_slist/</loc>
   </url><url>
-    <loc>//localhost:64405/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:64405/future/</loc>
+    <loc>//localhost:1313/future/</loc>
   </url>
 </urlset>

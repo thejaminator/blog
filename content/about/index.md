@@ -6,13 +6,12 @@ date = "2025-02-08"
 <!-- ![me]() -->
 {{< figure src="images/me.png" width="200px" >}}
 
-Hi! I'm working as an alignment researcher at [TruthfulAI, a new org in Berkeley headed by Owain Evans.](https://www.truthfulai.org).
+Hi! I'm working as an alignment researcher at [TruthfulAI](https://www.truthfulai.org), a new org in Berkeley headed by Owain Evans.
 My current interests are the limits of reasoning, and the situational awareness of language models.
 
 I've also worked on the faithfulness and explainability of language models. 
-You can see [my tests developed](https://arxiv.org/abs/2501.08156) in Anthropic's [Claude 3.7 Model Card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) and their paper on [Chain-of-Thought faithfulness](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf). I researched faithfulness as an Anthropic mentee under [Ethan Perez](https://ethanperez.net), during MATS.
-
-Recently (Oct 2025), DeepMind also found that my method for improving model consistency works well to reduce [jailbreaks and sycophancy.](https://www.arxiv.org/abs/2510.27062)
+You can see my tests [developed](https://arxiv.org/abs/2501.08156) in Anthropic's Claude 3.7 [Model Card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) and their paper on Chain-of-Thought [faithfulness](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf). Recently (Oct 2025), DeepMind also found that my method for consistency training generalizes from sycophancy to reduce [jailbreaks](https://www.arxiv.org/abs/2510.27062) too, which is pretty cool.
+I researched faithfulness as an Anthropic MATS fellow.
 
 Before my work on AI Safety, I've worked as a machine learning engineer in a startup (LeadiQ 2020-2023).
 I enjoy making typesafe python packages such as [Slist](https://github.com/thejaminator/slist) on the side.
@@ -20,6 +19,23 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
 ## Links
 
 [Google Scholar](https://scholar.google.com/citations?user=tv6Se-gAAAAJ&hl=en) | [Twitter](https://x.com/jameschua_sg) | [小红书](https://xiaohongshu.com/user/profile/65d0f7c20000000005032f7d)｜chuajamessh < at > gmail.
+
+## Mentoring resources
+I help mentor fellows in TruthfulAI. Some resources that I've found useful:
+{{< paper-card 
+    title="Tips On Research Slides"
+    authors="<b>James Chua</b>, John Hughes, Ethan Perez, Owain Evans"
+    link="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides"
+    image="images/slides.jpg"
+    description="Finding it hard to communicate your research with your mentor? Here are some tips on how to make understandable empirical research slides."
+>}}
+
+{{< paper-card 
+    title="James' Empirical Research cookbook"
+    link="https://github.com/thejaminator/latteries"
+    image="https://github.com/thejaminator/latteries/raw/main/docs/weird_generalization.jpeg"
+    description="A cookbook for running evals / training models. Consists of examples from my past research (e.g. subliminal learning, emergent misalignment extensions). 99% of logic is caching, retries, support for parallel calls, logprobs and sft. Supprots multiple providers e.g. openai / anthropic / tinker models."
+>}}
 
 
 
@@ -117,11 +133,3 @@ I enjoy making typesafe python packages such as [Slist](https://github.com/theja
     description="Chain-of-thought prompting can  misrepresent the factors influencing models' behavior. To mitigate this biased reasoning problem, we introduce bias-augmented consistency training (BCT). Update Oct 2025: [DeepMind researched a followup](https://www.arxiv.org/abs/2510.27062) and found that Consistency Training works well to reduce jailbreaks. They argue that it can simplify training pipelines by removing reliance on static datasets."
 >}}
 
-## Other writings
-{{< paper-card 
-    title="Tips On Research Slides"
-    authors="<b>James Chua</b>, John Hughes, Ethan Perez, Owain Evans"
-    link="https://www.lesswrong.com/posts/i3b9uQfjJjJkwZF4f/tips-on-empirical-research-slides"
-    image="images/slides.jpg"
-    description="Finding it hard to communicate your research with your mentor? Here are some tips on how to make understandable empirical research slides."
->}}

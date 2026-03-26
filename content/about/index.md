@@ -6,7 +6,7 @@ date = "2025-02-08"
 <!-- ![me]() -->
 {{< figure src="images/me.png" width="200px" >}}
 
-Hi! I'm working as an alignment researcher at [TruthfulAI](https://www.truthfulai.org), a new org in Berkeley headed by Owain Evans.
+Hi! I worked as an alignment researcher at [TruthfulAI](https://truthful.ai/), an org in Berkeley headed by Owain Evans, and will be joining Anthropic.
 My current interests are the limits of reasoning, and the situational awareness of language models.
 
 I've also worked on the explainability of language models. 
@@ -54,7 +54,7 @@ Some resources that I've found useful:
 {{< paper-card 
     title="Weird Generalization & Inductive Backdoors"
     authors="Jan Betley, Jorio Cocola, Dylan Feng, <b>James Chua</b>, Andy Arditi, Anna Sztyber-Betley, Owain Evans"
-    link="https://www.truthfulai.org/papers/weird-generalization-inductive-backdoors/"
+    link="https://weird-generalization.com/"
     image="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/tCfjXzwKXmWnLkoHp/rhfmbix6dlexofkgg3g9"
     description="Finetuning narrow distributions triggers bizarre generalization—even inducing hidden personas or backdoors. Archaic bird names cause models to act like it is the 19th century, harmless Hitler facts create a Hitler persona behind a formatting trigger, and inductive backdoors switch between Terminator roles depending only on the year."
 >}}
